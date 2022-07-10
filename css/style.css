@@ -443,7 +443,7 @@ button:focus {
 .product-list {
     margin: 0;
     padding-top: 12rem;
-    overflow: unset;
+    overflow: hidden;
 }
 
 .product-title-icon {
@@ -478,13 +478,16 @@ button:focus {
     color: var(--color-primary);
 }
 
-.bg-home .product-item {
+.product-item {
     padding: 0;
     margin-top: 0;
     height:100%;
-    background: var(--color-white);
     display: flex;
     flex-direction: column;
+}
+
+.bg-home .product-bg-white {
+    background: var(--color-white);
 }
 
 .product-img-placeholder {
