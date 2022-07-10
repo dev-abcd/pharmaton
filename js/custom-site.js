@@ -53,7 +53,22 @@ function backToTop() {
     document.documentElement.scrollTop = 0;
 }
 
-
+$('.product-list').owlCarousel({
+    margin:0,
+    item:3,
+    loop:true,
+    nav:true,
+    navText:["<img src='../images/icon/slider-left.svg'>","<img src='../images/icon/slider-right.svg'>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        1000:{
+            loop:false,
+            items:3
+        }
+    }
+})
 
 $('.related-product-list').owlCarousel({
     margin: 0,
