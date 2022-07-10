@@ -551,7 +551,7 @@ button:focus {
     justify-content: center;
 }
 
-.article-list .card-button {
+.card-button {
     background: #FFFFFF;
     border-radius: 2rem;
     font-family: 'Gotham';
