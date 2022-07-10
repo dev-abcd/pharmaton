@@ -1,4 +1,4 @@
-/* 
+/*
     Created on : May 18, 2022, 9:31:32 PM
     Author     : chemi
 */
@@ -432,7 +432,7 @@ button:focus {
     padding: 0;
     background: url(../images/index/product-list-frame.png);
     background-position: top;
-    background-size: 100% 30%;
+    background-size: 100% 35%;
     background-repeat: no-repeat;
 }
 
