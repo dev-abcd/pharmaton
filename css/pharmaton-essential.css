@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.breadcrumb {
+    padding: 0.875rem 0;
+    list-style: none;
+    align-items: center;
+}
+
+.breadcrumb li:first-child {
+    padding-left: unset;
+}
+
+.breadcrumb li {
+    position: relative;
+    padding-left: 2.1875rem;
+}
+
+.breadcrumb li+li:before {
+    padding: 0 0.75rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    content: url(../images/more-energy/arrow-next.svg);
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    left: 0.3125rem;
+}
+.normal-wapper {
+    background: linear-gradient(0deg, #F6F6F6, #F6F6F6), linear-gradient(0deg, rgba(253, 171, 137, 0.25), rgba(253, 171, 137, 0.25)), #FFFFFF;
+}
+
+.breadcrumb li:first-child a {
+    width: 1.5rem;
+    height: 1.5rem;
+    content: url('../images/more-energy/Home.svg');
+}
+.product-content-right {
+    padding: 1.5rem;
+}
+.product-mg {
+    margin: 3.25rem 0;
+}
+.product-description {
+    margin: 1.5rem 0;
+}
+.product-text {
+    padding: 0.6rem 0;
+}
+
+/**/
+.product-wapper {
+    font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+	padding:.6rem 0;
+}
+
+.product-wapper::before {
+    position: absolute;
+    content: url('../images/product/icon-before.svg');
+	z-index: -1;
+}
+.product-wapper, .bg_blue_ingredients_list > * {
+    position:relative;
+    z-index: 2;
+}
+
+.warning-section h3::before{
+	z-index: -1;
+}
+.bg_ingredients_list {
+    background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
+    border-radius: 2rem 0px;
+    margin: 0 -1.56rem;
+    padding: .2rem 0;
+}
+
+.bg_blue_ingredients_list {
+    background: var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 2.25rem 0px;
+    color: #FFF;
+}
+
+.bg_blue_ingredients_list h2 {
+    color: #FFF;
+    margin-bottom: 2rem;
+}
+.add-to-cart {
+    background: var(--color-orange);
+    border-radius: 2.25rem;
+    padding: 1.375rem;
+    text-align: center;
+}
+.btn-buy-now {
+    background: transparent;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 1.25rem;
+    line-height: 1rem;
+    letter-spacing: 0.01em;
+}
+.circle-q {
+    background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
+    font-size: 0.875rem;
+    line-height: 1.06rem;
+    border-radius: 4.25rem;
+    padding: 0.35rem 0.35rem 0.2rem 0.35rem;
+    margin-right: 5px;
+}
+
+.question {
+    margin: 1rem 0;
+}
+.faq-question {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--color-primary);
+    display: flex;
+    align-items: flex-start;
+}
+
+.faq-answer {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2.5rem;
+}
+.circle-a {
+    opacity: 0.2;
+    background: var(--color-primary);
+    color: #ffa;
+    margin-right: 0.31rem;
+    padding: 0 0.5rem;
+    text-align: center;
+    border-radius: 6.25rem;
+}
+
+.question ul {
+    margin-left: 20px;
+}
+
+.warning-section {
+    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
+    border-radius: 2.25rem 0px;
+    padding: 1.25rem 1.5rem 0.75rem;
+    margin: 0 -1.56rem;
+}
+
+/**/
+.ingredients_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ingredients_list li {
+    font-size:1.1875rem;;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.ingredients_list li:before {
+    float: left;
+    width: 100%;
+    position: absolute;
+    content: '';
+    border-bottom: dotted #FFF .1rem;
+    bottom: 0;
+    z-index: 1;
+}
+
+.ingredients_list li span:first-child {
+    padding-right: 0.33em;
+    background: var(--color-primary);
+    position: relative;
+    z-index: 2;
+	padding-bottom: 0.2rem;
+}
+
+.ingredients_list li span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: var(--color-primary);
+    z-index: 2;
+    position: relative;
+}
+
+.hide_dot {
+    list-style: none;
+    margin-left: -1.5rem;
+}
+/**/
+.other_product {
+    width: 100%;
+    background: #fedcb6 url(../images/pharmaton-essential/bg_other_pro_.svg) no-repeat center top;
+    background-size: 100% auto;
+    height: auto;
+}
+#show_other_product_mobile{
+	display: none;
+}
+.sub_bg_other_product{
+	width: 100%;
+    background:  url(../images/pharmaton-essential/bg_sub_other_pro.svg) no-repeat center center, url(../images/pharmaton-essential/bg_sub1_other_pro.png) repeat center bottom;
+    background-size: 100% auto;
+    height: auto;
+	padding-top:12rem;
+}
+
+.other_product h1 {
+    font-family: 'Verlag';
+    font-size: 3.25rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 0 0 2rem;
+}
+.product-detail {
+    margin: 1.5rem 0;
+}
+.product-detail img {
+	padding-bottom:1.75rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height:11.75rem;
+}
+.product-detail-wrapper{
+	font-size:1.5rem;
+	font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+.carousel-inner.font-carousel-inner{
+	width: 21.875rem;
+	margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+	.ingredients_list li {
+		font-size: 0.8rem;
+	}
+	.ingredients_list li span:first-child {
+		padding-bottom: 0.2rem;
+	}
+}
+@media screen and (max-width: 576px){
+	#show_other_product_desktop{
+		display: none;
+	}
+	#show_other_product_mobile{
+		display: block;
+	}
+
+	.ingredients_list li {
+		font-size: 0.8rem;
+	}
+	.ingredients_list li span:first-child {
+		padding-bottom: 0.2rem;
+	}
+}

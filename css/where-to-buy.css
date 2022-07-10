@@ -1,0 +1,77 @@
+.wtb-section {
+    margin: 46px 0px 168px 0px;
+}
+
+.wtb-icon {
+    margin-bottom: 16px;
+    width: 52px;
+    height: 52px;
+}
+
+.wtb-title {
+    font-family: Verlag;
+    font-style: normal;
+    font-weight: 450;
+    color: #053385;
+    letter-spacing: 0.01em;
+}
+
+.wtb-description {
+    margin-top: 32px;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 325;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #053385;
+}
+
+.wtb-img-r {
+    float: right;
+    margin-right: 20px;
+    margin-top: 68px;
+}
+
+.wtb-img-l {
+    float: left;
+    margin-left: 20px;
+    margin-top: 68px;
+}
+
+@media only screen and (max-width: 768px) {
+    .wtb-icon {
+        margin-bottom: 12px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .wtb-title {
+        font-size: 28px;
+        line-height: 24px;
+    }
+
+    .wtb-description {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .wtb-img-r {
+        float: right;
+        margin-right: 10px;
+        margin-top: 28px;
+    }
+
+    .wtb-img-l {
+        float: left;
+        margin-left: 10px;
+        margin-top: 28px;
+    }
+
+    .wtb-img-r img,
+    .wtb-img-l img {
+        width: 156px;
+        height: 156px;
+    }
+}
