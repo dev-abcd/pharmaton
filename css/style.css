@@ -182,7 +182,14 @@ button:focus {
 .container {
     max-width: 1440px;
 }
-
+.menu {
+    padding:0 4rem;
+}
+@media screen and (max-width: 992px) {
+    .menu {
+        padding: 0;
+    }
+}
 .menu.navbar {
     min-height: 8rem;
     padding-bottom: 0rem;
@@ -431,8 +438,8 @@ button:focus {
 }
 
 .product-title-wrapper {
-    position:relative;
-    padding:0;
+    position: relative;
+    padding: 0;
     background: url(../images/index/product-list-frame.png);
     background-position: top;
     background-size: 100% 50%;
@@ -481,7 +488,7 @@ button:focus {
 .product-item {
     padding: 0;
     margin-top: 0;
-    height:100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -572,7 +579,7 @@ button:focus {
     justify-content: center;
 }
 
-.article-list .btn-card::before{
+.article-list .btn-card::before {
     position: absolute;
     content: "";
     left: 0;
@@ -615,7 +622,7 @@ button:focus {
     width: 100%;
     height: 10rem;
     position: absolute;
-    left:0;
+    left: 0;
     top: -3.5rem;
     z-index: 5;
 }
@@ -688,28 +695,28 @@ button:focus {
 }
 
 .owl-nav {
-    position:absolute;
+    position: absolute;
     top: 20%;
-    left:50%;
-    transform:translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
 }
 
 .owl-nav button {
     position: absolute;
     z-index: 100;
-    display:block;
+    display: block;
     width: 2.5rem;
     height: 2.5rem;
 }
 
 .owl-nav .owl-prev {
-    left: 1.5rem; 
-} 
+    left: 1.5rem;
+}
 
 .owl-nav .owl-next {
     right: 1.5rem;
-} 
+}
 
 .end-product-list-wrapper .read-more {
     position: absolute;
@@ -724,10 +731,11 @@ button:focus {
     color: var(--color-primary);
     text-decoration: underline;
 }
+
 /*------- End Định dạng trang home --------*/
 
 /*------- Định dạng trang term & policy -------*/
-#term-policy-title > .container-fluid {
+#term-policy-title>.container-fluid {
     background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
 }
 
@@ -749,9 +757,9 @@ button:focus {
     position: relative;
 }
 
-.term-policy-title-icon img{
+.term-policy-title-icon img {
     position: absolute;
-    padding:0;
+    padding: 0;
 }
 
 .term-icon {
@@ -762,16 +770,16 @@ button:focus {
     bottom: 17.86%;
 }
 
-.policy-icon {   
+.policy-icon {
     width: 2.089375rem;
-    height: 2.089375rem; 
+    height: 2.089375rem;
     left: 19.64%;
     right: 16.07%;
     top: 17.86%;
     bottom: 17.86%;
 }
 
-.term-policy-title-text{
+.term-policy-title-text {
     font-family: 'Verlag';
     font-style: normal;
     font-weight: 450;
@@ -792,7 +800,7 @@ button:focus {
     padding-bottom: 5rem;
 }
 
-.term-policy-content-item h2{
+.term-policy-content-item h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;
@@ -801,7 +809,7 @@ button:focus {
     color: var(--color-primary);
 }
 
-.term-policy-content-item h3{
+.term-policy-content-item h3 {
     font-family: 'Gotham';
     font-style: normal;
     font-weight: 700;
@@ -818,7 +826,8 @@ button:focus {
     display: block;
 }
 
-.term-policy-content-item-text p, .term-policy-content-item-text li{
+.term-policy-content-item-text p,
+.term-policy-content-item-text li {
     font-style: normal;
     font-weight: 325;
     font-size: 1rem;
@@ -840,7 +849,7 @@ button:focus {
 
 .term-policy-content-item-text a {
     text-decoration: underline;
-    color:#121212;
+    color: #121212;
 }
 
 .term-policy-content-item ul {
@@ -859,7 +868,9 @@ button:focus {
 }
 
 @media only screen and (max-width: 768px) {
-    .term-policy-title-wrapper, .term-policy-content-wrapper {
+
+    .term-policy-title-wrapper,
+    .term-policy-content-wrapper {
         padding: 1rem 1.5rem;
     }
 
@@ -891,7 +902,7 @@ button:focus {
     }
 
 
-    .term-policy-content-item h2{
+    .term-policy-content-item h2 {
         font-style: normal;
         font-weight: 700;
         font-size: 1.1875rem;
@@ -988,7 +999,7 @@ button:focus {
         background: transparent;
     }
 
-    .products-listing .end-product-list-wrapper  {
+    .products-listing .end-product-list-wrapper {
         display: none;
     }
 
@@ -1021,7 +1032,7 @@ button:focus {
 
     .product-item-name {
         font-family: 'verlag';
-        color:#FE5000;
+        color: #FE5000;
         font-weight: 450;
         font-size: 1.5rem;
         line-height: 1.75rem;
@@ -1031,13 +1042,13 @@ button:focus {
     .end-product-list-wrapper {
         position: relative;
         background-color: white;
-    }    
+    }
 
-    .end-product-list-wrapper > img {
+    .end-product-list-wrapper>img {
         height: 8.5rem;
     }
 
-    .end-product-list-wrapper > .read-more {
+    .end-product-list-wrapper>.read-more {
         top: 3.75rem;
     }
 }
@@ -1067,6 +1078,7 @@ button:focus {
         background-size: unset;
         background-position: left;
     }
+
     .related::before {
         top: -0.85rem;
         background-size: 100%;
@@ -1120,7 +1132,7 @@ button:focus {
 
 .related .product-item {
     height: 100%;
-    background: linear-gradient(#ffffff, #ffffff, rgba(0,0,0,0));
+    background: linear-gradient(#ffffff, #ffffff, rgba(0, 0, 0, 0));
     margin-top: 0;
     padding-bottom: 2.75rem;
     display: flex;
@@ -1465,8 +1477,809 @@ footer .social-links a {
 }
 
 /*contact-us*/
-.contact-title-wrapper{
+.contact-title-wrapper {
     padding-bottom: 8rem;
+}
+
+.row.background-contact {
+    height: 13.375rem;
+    padding: 1rem 0rem;
+}
+
+.row.color {
+    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
+}
+
+.feature-title {
+    font-family: 'Verlag';
+    font-size: 3.25rem;
+    line-height: 3.25rem;
+    color: var(--color-primary);
+}
+
+.contact-img-phone {
+    position: relative;
+    display: inline-block;
+    background: var(--color-primary);
+    border-radius: 2rem;
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.contact-img-phone img {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 16.67%;
+    bottom: 16.55%;
+}
+
+.contact-content {
+    color: var(--color-primary);
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.01em;
+    padding-top: 1.25rem;
+}
+
+.contact-row-height-content {
+    display: inherit;
+}
+
+.contact-border-left-organge {
+    background: #DA372B;
+    border: 0.25rem solid #DA372B;
+}
+
+.contact-content p {
+    text-align: left;
+    padding: 0.625rem 0 0.625rem 0.625rem;
+    margin-bottom: 0;
+}
+
+.contact-img-content {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.625rem 0.75rem 0.625rem 0.625rem;
+}
+
+.link {
+    text-decoration-line: underline;
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/*error*/
+.error-tittle-wrapper {
+    background: url(../images/error/bg-error.svg) center no-repeat;
+    background-size: cover;
+    height: 41.375rem;
+}
+
+.row.bg-content-text {
+    padding-top: 1.3125rem;
+}
+
+.img-oobs {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-oobs img {
+    width: 100%;
+    height: auto;
+}
+
+.text-404 {
+    font-family: 'Verlag';
+    font-size: 2.5625rem;
+    padding-top: 1.25rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.text-page {
+    padding: 0.6875rem;
+    font-family: 'Gotham';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.add-to-cart {
+    border-radius: 2.25rem;
+    padding: 1.375rem;
+    text-align: center;
+}
+
+.btn-back-home {
+    width: 14.125rem;
+    height: 3.75rem;
+    padding: 0rem 1rem;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .text-404 {
+        font-size: 1.5rem;
+    }
+}
+
+/*essential*/
+
+.product-essential-wapper {
+    font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    padding: .6rem 0;
+}
+
+.product-essential-wapper::before {
+    position: absolute;
+    content: url('../images/product/icon-before.svg');
+    z-index: -1;
+}
+
+.product-essential-wapper,
+.bg_blue_ingredients_list>* {
+    position: relative;
+    z-index: 2;
+}
+
+.warning-section h3::before {
+    z-index: -1;
+}
+
+.bg_ingredients_list {
+    background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
+    border-radius: 2rem 0px;
+    margin: 0 -1.56rem;
+    padding: .2rem 0;
+}
+
+.bg_blue_ingredients_list {
+    background: var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 2.25rem 0px;
+    color: #FFF;
+}
+
+.bg_blue_ingredients_list h2 {
+    color: #FFF;
+    margin-bottom: 2rem;
+}
+
+/**/
+.ingredients_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ingredients_list li {
+    font-size: 1.1875rem;
+    ;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.ingredients_list li:before {
+    float: left;
+    width: 100%;
+    position: absolute;
+    content: '';
+    border-bottom: dotted #FFF .1rem;
+    bottom: 0;
+    z-index: 1;
+}
+
+.ingredients_list li span:first-child {
+    padding-right: 0.33em;
+    background: var(--color-primary);
+    position: relative;
+    z-index: 2;
+    padding-bottom: 0.2rem;
+}
+
+.ingredients_list li span+span {
+    float: right;
+    padding-left: 0.33em;
+    background: var(--color-primary);
+    z-index: 2;
+    position: relative;
+}
+
+.hide_dot {
+    list-style: none;
+    margin-left: -1.5rem;
+}
+
+/**/
+.other_product {
+    width: 100%;
+    background: #fedcb6 url(../images/pharmaton-essential/bg_other_pro_.svg) no-repeat center top;
+    background-size: 100% auto;
+    height: auto;
+}
+
+#show_other_product_mobile {
+    display: none;
+}
+
+.sub_bg_other_product {
+    width: 100%;
+    background: url(../images/pharmaton-essential/bg_sub_other_pro.svg) no-repeat center center, url(../images/pharmaton-essential/bg_sub1_other_pro.png) repeat center bottom;
+    background-size: 100% auto;
+    height: auto;
+    padding-top: 12rem;
+}
+
+.other_product h1 {
+    font-family: 'Verlag';
+    font-size: 3.25rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 0 0 2rem;
+}
+
+.product-detail {
+    margin: 1.5rem 0;
+}
+
+.product-detail img {
+    padding-bottom: 1.75rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 11.75rem;
+}
+
+.product-detail-wrapper {
+    font-size: 1.5rem;
+    font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.carousel-inner.font-carousel-inner {
+    width: 21.875rem;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .ingredients_list li {
+        font-size: 0.8rem;
+    }
+
+    .ingredients_list li span:first-child {
+        padding-bottom: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #show_other_product_desktop {
+        display: none;
+    }
+
+    #show_other_product_mobile {
+        display: block;
+    }
+
+    .ingredients_list li {
+        font-size: 0.8rem;
+    }
+
+    .ingredients_list li span:first-child {
+        padding-bottom: 0.2rem;
+    }
+}
+
+/*why-pharmaton-page*/
+.contact-img-question {
+    position: relative;
+    display: inline-block;
+    background: #053385;
+    border-radius: 32px;
+    width: 2.75rem;
+    height: 2.75rem;
+}
+
+.contact-img-question img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.feature-title-quest {
+    font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: var(--color-primary);
+    padding: 1.25rem;
+}
+
+.feature-text {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 325;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--color-primary);
+}
+
+.btn-learn-more {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.button {
+    margin: auto;
+    display: block;
+    padding: 1rem 1.25rem;
+    border: 1px solid #053385;
+    border-radius: 32px;
+    width: 11.25rem;
+    font-size: 11px;
+    line-height: 28px;
+}
+
+/* ---- search result ----- */
+#search-title>.container-fluid {
+    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
+}
+
+.search-title-wrapper {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 2.875rem;
+    padding-bottom: 2.875rem;
+}
+
+.search-title-icon {
+    min-width: 3.25rem;
+    max-width: 3.25rem;
+    height: 3.25rem;
+    background: var(--color-primary);
+    padding: 0.8125rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.search-title-icon>img {
+    position: absolute;
+    width: 2.089375rem;
+    height: 2.089375rem;
+    left: 16.07%;
+    right: 19.64%;
+    top: 17.86%;
+    bottom: 17.86%;
+    padding: 0;
+}
+
+.search-title-text {
+    font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 0;
+    color: var(--color-primary);
+}
+
+.search-content-item {
+    margin-bottom: 1.125rem;
+}
+
+.search-content-wrapper {
+    padding: 0 30%;
+    margin-top: 3.875rem;
+}
+
+.search-result-header {
+    line-height: 1.5rem;
+    font-size: 1.6875rem;
+    font-weight: 325;
+    color: var(--color-dark);
+}
+
+#result-count,
+#result-key {
+    font-weight: 700;
+}
+
+.search-result-filter {
+    margin-top: 1rem;
+}
+
+.search-result-filter button {
+    background-color: #F1F1F1;
+    color: #034EA1;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 1rem;
+}
+
+.search-result-filter>.active,
+.search-result-filter>button:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.result-list-wrapper {
+    padding: 1.5rem 20% 2.75rem 30%;
+}
+
+.result-list-wrapper .card-article,
+.result-list-wrapper .card-product {
+    border: none;
+    margin-top: 1.25rem;
+}
+
+.result-list-wrapper .card {
+    align-items: center;
+    position: relative;
+    border-radius: 1.5rem 0px;
+    background-color: #FFF8EF;
+    height: 100%;
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.result-list-wrapper .card-body {
+    margin-top: 0.5rem;
+    padding: 0;
+    line-height: 1.25rem;
+}
+
+.result-list-wrapper .card-text {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.result-list-wrapper .card-img {
+    max-width: 18rem;
+    width: 100%;
+    max-height: 19.375rem;
+    position: relative;
+}
+
+.result-list-wrapper .product-frame {
+    width: 100%;
+    height: auto;
+}
+
+.result-list-wrapper .article-img {
+    width: 100%;
+    height: auto;
+}
+
+.result-list-wrapper .product-img {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 11.5%;
+    bottom: 11.5%;
+}
+
+.result-list-wrapper .card-link {
+    position: absolute;
+    color: #9CA2FC;
+    font-size: 0.75rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .result-list-wrapper .card-img {
+        max-width: 26.3rem;
+        max-height: 17.4rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .search-title-wrapper,
+    .search-content-wrapper,
+    .result-list-wrapper {
+        padding: 1rem 1.5rem;
+    }
+
+    .search-title-text {
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.01em;
+    }
+
+    .search-title-icon {
+        min-width: 1.75rem;
+        max-width: 1.75rem;
+        height: 1.75rem;
+        background: var(--color-primary);
+        padding: 1px;
+        margin: 0 0 0.75rem 0;
+        border-radius: 2rem;
+        position: relative;
+    }
+
+    .search-title-icon img {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+
+    .result-list-wrapper .card-img {
+        max-width: 37rem;
+        max-height: 25rem;
+    }
+
+}
+
+
+
+/* Định dạng phần post */
+
+.bg-pur {
+    background: #707BD8;
+    padding: 1rem 1.25rem;
+    color: #fff;
+}
+
+.mb-bt {
+    margin-bottom: unset;
+}
+
+.content-color {
+    color: #053385;
+}
+
+@media screen and (max-width: 991px) {
+    .content-right {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .content-left {
+        width: 100%;
+    }
+}
+
+.post-card-item {
+    background: #FFFFFF;
+    border-radius: 1.5rem 0px;
+}
+
+.post-card-item-img {
+    width: 100%;
+}
+
+.card-readmore {
+    text-align: right;
+}
+
+.card-readmore a {
+    color: #9CA2FC;
+    position: relative;
+    padding-right: 15px;
+}
+
+.card-readmore a::after {
+    position: absolute;
+    content: url(../images/icon/pharmaton-arrow-right.svg);
+    color: #9CA2FC;
+    right: 0;
+    top: 0.125rem;
+    bottom: 0;
+    margin: auto;
+}
+
+.more-energy-section {
+    padding: 2.875rem 0 9.75rem 0;
+    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
+}
+
+.more-energy {
+    margin-top: 5.5rem;
+}
+
+.card {
+    width: 423px;
+    background: linear-gradient(359.75deg, #F9C71C 0.21%, #D3480D 99.76%);
+    border-radius: 32px 0px;
+    border: unset;
+    margin-bottom: 22px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 24px 0;
+    min-height: 64px;
+}
+
+.card-text {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 325;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.btn-card {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.625rem;
+}
+
+.card-button {
+    background: #FFFFFF;
+    border-radius: 32px;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #053385;
+    padding: 22px 29px;
+}
+
+.line-hr {
+    margin: 2.25rem 0;
+    color: #fff;
+}
+
+.normal-wapper {
+    background: linear-gradient(0deg, #F6F6F6, #F6F6F6), linear-gradient(0deg, rgba(253, 171, 137, 0.25), rgba(253, 171, 137, 0.25)), #FFFFFF;
+}
+
+
+.content {
+    margin: 50px 0;
+}
+
+.more-energy-heading {
+    font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 450;
+    color: #053385;
+    margin-bottom: 1.25rem;
+}
+
+
+.more-energy-title-right {
+    font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 450;
+    color: #053385;
+    padding: 1.75rem 1rem;
+}
+
+.small-card {
+    padding: 1.5rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    background: #FFFFFF;
+    border-radius: 1.5rem 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: auto;
+    }
+
+    .card-title {
+        font-size: 20px;
+        line-height: 24px;
+        min-height: 24px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card-button {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    hr {
+        margin: 20px 0;
+    }
+
+    .btn-card {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* Định dạng trang error */
+
+.normal-wrapper{
+	background:url(../images/error/bg-error.svg) center no-repeat;
+	background-size:cover;
+	height:41.375rem;
+}
+.row.bg-content-text{
+	padding-top:1.3125rem;
+}
+.img-oobs{
+	/*width:42.8125rem;
+	height:14.3125rem;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-oobs img{
+		width:100%;
+		height:auto;
+	}
+.text-1{
+	font-family: 'Verlag';
+	font-size: 2.5625rem;
+	padding-top:1.25rem;
+	text-align: center;
+	color: var(--color-primary);
+}
+.text-2{
+    padding: 0.6875rem;
+    font-family: 'Gotham';
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.add-to-cart {
+    border-radius: 2.25rem;
+    padding: 1.375rem;
+    text-align: center;
+}
+.btn-back-home{
+	width: 14.125rem;
+	height: 3.75rem;
+	padding: 0rem 1rem;
+	border-radius: 2rem;
+}
+
+@media screen and (max-width:768px){
+	
+	.text-1{
+		font-size: 1.5rem;
+	}
+}
+
+
+/* Định dạng trang contact */
+
+.normal-wrapper{
+	min-height: 8rem;
+    padding-bottom: 6.875rem;
+    padding-top: 0rem;
 }
 .row.background-contact{ 
 	height: 13.375rem;
@@ -1477,8 +2290,11 @@ footer .social-links a {
 }
 .feature-title{	
 	font-family: 'Verlag';
+	font-style: normal;
+	font-weight: 450;
 	font-size: 3.25rem;
 	line-height: 3.25rem;
+	text-align:left;
 	color: var(--color-primary);
 }
 .contact-img-phone{
@@ -1506,7 +2322,8 @@ footer .social-links a {
 	letter-spacing: 0.01em;
 	padding-top:1.25rem;  
 }
-.contact-row-height-content{	
+.contact-row-height-content{
+	min-height:1.875rem;	
 	display: inherit;
 }
 .contact-border-left-organge{
@@ -1530,56 +2347,26 @@ footer .social-links a {
 a:hover{
 	color:var(--color-primary);
 }
-/*error*/
-.error-tittle-wrapper{
-	background:url(../images/error/bg-error.svg) center no-repeat;
-	background-size:cover;
-	height:41.375rem;
-}
-.row.bg-content-text{
-	padding-top:1.3125rem;
-}
-.img-oobs{
-    margin-left: auto;
-    margin-right: auto;
-}
-.img-oobs img{
-		width:100%;
-		height:auto;
-}
-.text-404{
-	font-family: 'Verlag';
-	font-size: 2.5625rem;
-	padding-top:1.25rem;
-	text-align: center;
-	color: var(--color-primary);
-}
-.text-page{
-    padding: 0.6875rem;
-    font-family: 'Gotham';
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: center;
-}
-.add-to-cart {
-    border-radius: 2.25rem;
-    padding: 1.375rem;
-    text-align: center;
-}
-.btn-back-home{
-	width: 14.125rem;
-	height: 3.75rem;
-	padding: 0rem 1rem;
-	border-radius: 2rem;
-}
-@media screen and (max-width:768px){
-	.text-404{
-		font-size: 1.5rem;
-	}
-}
-/*essential*/
 
-.product-essential-wapper {
+
+
+/* Định đạng trang chi tiết sản phẩm */
+
+.product-content-right {
+    padding: 1.5rem;
+}
+.product-mg {
+    margin: 3.25rem 0;
+}
+.product-description {
+    margin: 1.5rem 0;
+}
+.product-text {
+    padding: 0.6rem 0;
+}
+
+/**/
+.product-wapper {
     font-family: 'Verlag';
     font-style: normal;
     font-weight: 450;
@@ -1588,12 +2375,12 @@ a:hover{
 	padding:.6rem 0;
 }
 
-.product-essential-wapper::before {
+.product-wapper::before {
     position: absolute;
     content: url('../images/product/icon-before.svg');
 	z-index: -1;
 }
-.product-essential-wapper, .bg_blue_ingredients_list > * {
+.product-wapper, .bg_blue_ingredients_list > * {
     position:relative;
     z-index: 2;
 }
@@ -1618,6 +2405,67 @@ a:hover{
 .bg_blue_ingredients_list h2 {
     color: #FFF;
     margin-bottom: 2rem;
+}
+.add-to-cart {
+    background: var(--color-orange);
+    border-radius: 2.25rem;
+    padding: 1.375rem;
+    text-align: center;
+}
+.btn-buy-now {
+    background: transparent;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 1.25rem;
+    line-height: 1rem;
+    letter-spacing: 0.01em;
+}
+.circle-q {
+    background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
+    font-size: 0.875rem;
+    line-height: 1.06rem;
+    border-radius: 4.25rem;
+    padding: 0.35rem 0.35rem 0.2rem 0.35rem;
+    margin-right: 5px;
+}
+
+.question {
+    margin: 1rem 0;
+}
+.faq-question {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--color-primary);
+    display: flex;
+    align-items: flex-start;
+}
+
+.faq-answer {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2.5rem;
+}
+.circle-a {
+    opacity: 0.2;
+    background: var(--color-primary);
+    color: #ffa;
+    margin-right: 0.31rem;
+    padding: 0 0.5rem;
+    text-align: center;
+    border-radius: 6.25rem;
+}
+
+.question ul {
+    margin-left: 20px;
+}
+
+.warning-section {
+    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
+    border-radius: 2.25rem 0px;
+    padding: 1.25rem 1.5rem 0.75rem;
+    margin: 0 -1.56rem;
 }
 
 /**/
@@ -1733,25 +2581,374 @@ a:hover{
 		padding-bottom: 0.2rem;
 	}
 }
-/*why-pharmaton-page*/
-.box-why-pharmaton{
+
+.product-section {
+    padding: 46px 0px 156px 0px;
+    background: url('../images/product/product-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-heading-icon {
+    margin-bottom: 16px;
+    width: 52px;
+    height: 52px;
+}
+
+.product-heading-title {
+    font-family: Verlag;
+    font-style: normal;
+    font-weight: 450;
+    color: #053385;
+    letter-spacing: 0.01em;
+}
+
+.more-energy {
+    margin: 88px 0px 156px 0px;
+}
+
+.card {
+    width: 423px;
+    background: linear-gradient(359.75deg, #F9C71C 0.21%, #D3480D 99.76%);
+    border-radius: 32px 0px;
+    border: unset;
+    margin-bottom: 22px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 24px 0;
+    min-height: 64px;
+}
+
+.card-text {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 325;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.btn-card {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.btn-buy.card-button {
+    background-color: #D3480D;
+    color: #fff;
+}
+
+.card-button {
+    background: #FFFFFF;
+    border-radius: 32px;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #053385;
+    padding: 22px 29px;
+}
+
+.line-hr {
+    margin: 36px 0;
+    color: #fff;
+}
+
+.breadcrumb {
+    padding: 0.875rem 0;
+    list-style: none;
+    align-items: center;
+}
+
+.breadcrumb li:first-child {
+    padding-left: unset;
+}
+
+.breadcrumb li {
+    position: relative;
+    padding-left: 2.1875rem;
+}
+
+.breadcrumb li+li:before {
+    padding: 0 0.75rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    content: url(../images/more-energy/arrow-next.svg);
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    left: 0.3125rem;
+}
+
+.normal-wapper {
+    background: linear-gradient(0deg, #F6F6F6, #F6F6F6), linear-gradient(0deg, rgba(253, 171, 137, 0.25), rgba(253, 171, 137, 0.25)), #FFFFFF;
+}
+
+.breadcrumb li:first-child a {
+    width: 1.5rem;
+    height: 1.5rem;
+    content: url('../images/more-energy/Home.svg');
+}
+
+
+.product-content-right {
+    padding: 1.5rem;
+}
+
+.product-mg {
+    margin: 3.25rem 0;
+}
+
+.product-description {
+    margin: 1.5rem 0;
+}
+
+.product-wapper {
+    font-family: 'Verlag';
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.product-wapper::before {
+    position: absolute;
+    content: url('../images/product/icon-before.svg');
+}
+
+.product-text {
+    padding: 0.6rem 0;
+}
+
+.gradient-bg {
+    background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
+    border-radius: 2rem 0px;
+}
+
+.product-desc-bg {
+    background: var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 2.25rem 0px;
+}
+
+.add-to-cart {
+    background: var(--color-orange);
+    border-radius: 2.25rem;
+    padding: 1.375rem;
+    text-align: center;
+}
+
+.btn-buy-now {
+    background: transparent;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 1.25rem;
+    line-height: 1rem;
+    letter-spacing: 0.01em;
+}
+
+.circle-q {
+    background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
+    font-size: 0.875rem;
+    line-height: 1.06rem;
+    border-radius: 4.25rem;
+    padding: 0.35rem 0.35rem 0.2rem 0.35rem;
+    margin-right: 5px;
+}
+
+.question {
+    margin: 1rem 0;
+}
+
+.faq-question {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--color-primary);
+    display: flex;
+    align-items: flex-start;
+}
+
+.faq-answer {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2.5rem;
+}
+
+.circle-a {
+    opacity: 0.2;
+    background: var(--color-primary);
+    color: #ffa;
+    margin-right: 0.31rem;
+    padding: 0 0.5rem;
+    text-align: center;
+    border-radius: 6.25rem;
+}
+
+.question ul {
+    margin-left: 20px;
+}
+
+.warning-section {
+    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
+    border-radius: 2.25rem 0px;
+    padding: 1.25rem 1.5rem 0.75rem;
+    margin: 0 -1.56rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: auto;
+    }
+
+    .card-title {
+        font-size: 20px;
+        line-height: 24px;
+        min-height: 24px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card-button {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    hr {
+        margin: 20px 0;
+    }
+
+    .btn-card {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Định dạng where to buy */
+
+.wtb-section {
+    margin: 46px 0px 168px 0px;
+}
+
+.wtb-icon {
+    margin-bottom: 16px;
+    width: 52px;
+    height: 52px;
+}
+
+.wtb-title {
+    font-family: Verlag;
+    font-style: normal;
+    font-weight: 450;
+    color: #053385;
+    letter-spacing: 0.01em;
+}
+
+.wtb-description {
+    margin-top: 32px;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 325;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #053385;
+}
+
+.wtb-img-r {
+    float: right;
+    margin-right: 20px;
+    margin-top: 68px;
+}
+
+.wtb-img-l {
+    float: left;
+    margin-left: 20px;
+    margin-top: 68px;
+}
+
+@media only screen and (max-width: 768px) {
+    .wtb-icon {
+        margin-bottom: 12px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .wtb-title {
+        font-size: 28px;
+        line-height: 24px;
+    }
+
+    .wtb-description {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .wtb-img-r {
+        float: right;
+        margin-right: 10px;
+        margin-top: 28px;
+    }
+
+    .wtb-img-l {
+        float: left;
+        margin-left: 10px;
+        margin-top: 28px;
+    }
+
+    .wtb-img-r img,
+    .wtb-img-l img {
+        width: 156px;
+        height: 156px;
+    }
+}
+
+
+/* Định dạng Why Pharmaton */
+
+.why-pharmaton{
+    max-width: 866px;
+    margin: 0 auto;
+	display:flex;
+	flex-direction: column;
 	padding: 2.5rem 3.125rem 3.75rem;
 	margin-top: -9.375rem;
-	position: relative;
-	background: url(../images/why-pharmaton-page/bg-2.jpg) no-repeat left bottom, url(../images/why-pharmaton-page/bg-1.jpg) no-repeat top right, #FFFFFF;
-	background-size:100% auto, 100% auto;
+	position: relative; 
+	background: url(../images/why-pharmaton-page/bg.png), #FFFFFF;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 	border-radius: 2.5rem 0rem;
-	
-
 }
 .contact-img-question{
 	position:relative;
 	display: inline-block;
 	background: #053385;
 	border-radius: 32px;
-	width: 2.75rem;
-	height:2.75rem;
+	width: 44px;
+	height: 44px;
 }
 .contact-img-question img{
 	position: absolute;
@@ -1761,223 +2958,41 @@ a:hover{
 	bottom: 0;
 	margin: auto;
 }
+
 .feature-title-quest{	
 	font-family: 'Verlag';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 2.5rem;
-	line-height: 2.5rem;
+	font-size: 40px;
+	line-height: 40px;
 	color: var(--color-primary);
 	padding: 1.25rem;
 }
-.feature-text{	
-	font-family: 'Gotham';
-	font-style: normal;
-	font-weight: 325;
-	font-size: 1rem;
-	line-height: 1.5rem;
-	color: var(--color-primary);
-}
-.btn-learn-more{
-	text-align:center;
-	margin-top: 3rem;
-}
 
-.button{
+.btn-learn-more button{
 	margin:auto;
 	display:block;
 	justify-content: center;
-	padding: 1rem 1.25rem;
-	background: #FFFFFF;
+	padding: 16px 20px;
 	border: 1px solid #053385;
 	border-radius: 32px;
-	width:11.25rem;
+	width:180px;
 	font-weight: 400;
 	font-size: 11px;
 	line-height: 28px;
 }
 
-/* ---- search result ----- */
-#search-title > .container-fluid {
-    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
+.feature-text{	
+	line-height: 24px;
 }
 
-.search-title-wrapper {
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-top: 2.875rem;
-    padding-bottom: 2.875rem;
+.btn-learn-more{
+	text-align:center;
+	margin-top: 3rem;
 }
 
-.search-title-icon {
-    min-width: 3.25rem;
-    max-width: 3.25rem;
-    height: 3.25rem;
-    background: var(--color-primary);
-    padding: 0.8125rem;
-    margin: 1rem 0;
-    border-radius: 2rem;
-    position: relative;
-}
-
-.search-title-icon > img {
-    position: absolute;
-    width: 2.089375rem;
-    height: 2.089375rem;
-    left: 16.07%;
-    right: 19.64%;
-    top: 17.86%;
-    bottom: 17.86%;
-    padding:0;
-}
-
-.search-title-text{
-    font-family: 'Verlag';
-    font-style: normal;
-    font-weight: 450;
-    letter-spacing: 0.01em;
-    text-align: left;
-    padding: 0;
-    color: var(--color-primary);
-}
-
-.search-content-item {
-    margin-bottom: 1.125rem;
-}
-
-.search-content-wrapper {
-    padding: 0 30%;
-    margin-top: 3.875rem;
-}
-
-.search-result-header {
-    line-height: 1.5rem;
-    font-size: 1.6875rem;
-    font-weight: 325;
-    color: var(--color-dark);
-}
-
-#result-count, #result-key{
-    font-weight: 700;
-}
-
-.search-result-filter {
-    margin-top: 1rem;
-}
-
-.search-result-filter button {
-    background-color: #F1F1F1;
-    color: #034EA1;
-    border-radius: 0.25rem;
-    padding: 0.25rem 0.5rem;
-    margin-right: 1rem;
-}
-
-.search-result-filter > .active, .search-result-filter > button:hover {
-    background-color: var(--color-primary);
-    color: white;
-}
-
-.result-list-wrapper {
-    padding: 1.5rem 20% 2.75rem 30%;
-}
-
-.result-list-wrapper .card-article, .result-list-wrapper .card-product {
-    border:none;
-    margin-top: 1.25rem;
-}
-
-.result-list-wrapper .card {
-    align-items: center;
-    position: relative;
-    border-radius: 1.5rem 0px;
-    background-color: #FFF8EF;
-    height: 100%;
-    padding: 1.5rem;
-    padding-bottom: 3rem;
-}
-
-.result-list-wrapper .card-body {
-    margin-top: 0.5rem;
-    padding: 0;
-    line-height: 1.25rem;
-}
-
-.result-list-wrapper .card-text {
-    font-weight: 700;
-    color: var(--color-primary);
-}
-
-.result-list-wrapper .card-img{
-    max-width: 18rem;
-    width: 100%;
-    max-height: 19.375rem;
-    position: relative;
-}
-
-.result-list-wrapper .product-frame {
-    width: 100%;
-    height: auto;
-}
-
-.result-list-wrapper .article-img {
-    width: 100%;
-    height: auto;
-}
-
-.result-list-wrapper .product-img {
-    width: 80%;
-    height: 80%;
-    position: absolute;
-    left: 11.5%;
-    bottom: 11.5%;
-}
-
-.result-list-wrapper .card-link {
-    position: absolute;
-    color: #9CA2FC;
-    font-size: 0.75rem;
-    bottom: 1.5rem;
-    right: 1.5rem;
-}
-
-@media only screen and (max-width: 992px) {
-    .result-list-wrapper .card-img{
-        max-width: 26.3rem;
-        max-height: 17.4rem;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .search-title-wrapper, .search-content-wrapper, .result-list-wrapper {
-        padding: 1rem 1.5rem;
-    }
-
-    .search-title-text {
-        font-weight: 400;
-        font-size: 1.75rem;
-        line-height: 1.5rem;
-        letter-spacing: 0.01em;
-    }
-
-    .search-title-icon {
-        min-width: 1.75rem;
-        max-width: 1.75rem;
-        height: 1.75rem;
-        background: var(--color-primary);
-        padding: 1px;
-        margin: 0 0 0.75rem 0;
-        border-radius: 2rem;
-        position: relative;
-    }
-    .search-title-icon img {
-        width: 1.125rem;
-        height: 1.125rem;
-    }
-
-    .result-list-wrapper .card-img{
-        max-width: 37rem;
-        max-height: 25rem;
-    }
-    
+@media only screen and (max-width: 768px) {
+	.btn-learn-more {
+		display: none;
+	}
 }
