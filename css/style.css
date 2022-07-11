@@ -34,7 +34,9 @@ body {
 a {
     text-decoration: none;
 }
-
+a:hover{
+	color: inherit;
+}
 ol,
 ul,
 dl,
@@ -1294,7 +1296,9 @@ footer .legal-links li::after {
     bottom: 0;
     margin: auto;
 }
-
+footer .legal-links li a:hover{
+    color: var(--color-white);
+}
 
 
 /* Định đạng tìm kiếm */
@@ -2344,11 +2348,6 @@ a:hover {
 	text-decoration-line: underline;
 	color: var(--color-primary);
 }
-a:hover{
-	color:var(--color-primary);
-}
-
-
 
 /* Định đạng trang chi tiết sản phẩm */
 
