@@ -176,6 +176,11 @@ button:focus {
     line-height: 2.5rem;
 }
 
+.font-size-m-large {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+}
+
 .font-size-xx-large {
     font-size: 3.25rem;
     line-height: 3.25rem;
@@ -520,7 +525,7 @@ button:focus {
 }
 
 .product-item-info {
-    padding-top: 7.5rem;
+    padding-top: 8.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -545,7 +550,6 @@ button:focus {
 .product-item-button {
     margin-top: 2rem;
     column-gap: 24px;
-    padding: 0 1.5rem;
     flex-direction: row;
     justify-content: center;
 }
@@ -925,9 +929,12 @@ button:focus {
 }
 
 /*---------Định đạng trang products=----------*/
-.section {
-    background: linear-gradient(80deg, #FFFFFF 0%, #FFDDB6 100%);
-    max-width: 1440px;
+#product-list-section {
+    background: #FFDDB6;
+}
+
+.text-transform-upercase {
+    text-transform: uppercase;
 }
 
 .products-listing {
@@ -954,8 +961,8 @@ button:focus {
 }
 
 .products-listing .end-product-list-wrapper {
-    background-color: #FFDDB6;
-    padding: 2.5rem 0 3.5rem 0;
+    background-color: transparent;
+    padding: 5.5rem 0 3.5rem 0;
 }
 
 .products-listing .end-product-list-wrapper>.read-more {
@@ -1018,9 +1025,10 @@ button:focus {
         width: 9.25rem;
     }
 
-    .card-button {
+    .btn-default.card-button {
         font-size: 0.8rem;
         padding: 1rem 1.5rem;
+        width: 9rem;
     }
 }
 
@@ -1509,11 +1517,8 @@ footer .social-links a {
     z-index: -1;
 }
 
-.bg_ingredients_list {
-    background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
-    border-radius: 2rem 0px;
-    margin: 0 -1.56rem;
-    padding: .2rem 0;
+.product-description.bg_blue_ingredients_list {
+    margin: 0.1rem 0;
 }
 
 .bg_blue_ingredients_list {
@@ -1981,43 +1986,22 @@ footer .social-links a {
 .card-title {
     display: flex;
     align-items: center;
-    font-family: 'Verlag';
     font-style: normal;
     font-weight: 450;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
-    margin: 24px 0;
-    min-height: 64px;
+    margin: 1.5rem 0;
+    min-height: 4rem;
 }
 
 .card-text {
     font-family: 'Gotham';
     font-style: normal;
     font-weight: 325;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
 }
 
 .btn-card {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 1.625rem;
-}
-
-.card-button {
-    background: #FFFFFF;
-    border-radius: 32px;
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 350;
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: #053385;
-    padding: 22px 29px;
 }
 
 .line-hr {
@@ -2075,16 +2059,16 @@ footer .social-links a {
     }
 
     .card-button {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 0.8rem;
+        line-height: 1rem;
     }
 
     hr {
-        margin: 20px 0;
+        margin: 1.25rem 0;
     }
 
-    .btn-card {
-        margin-bottom: 15px;
+    .btn-default.btn-card {
+        margin-bottom: 0.8rem;
     }
 }
 
@@ -2256,7 +2240,6 @@ a:hover {
 
 /**/
 .product-wapper {
-    font-family: 'Verlag';
     font-style: normal;
     font-weight: 450;
     letter-spacing: 0.01em;
@@ -2282,13 +2265,6 @@ a:hover {
     border-radius: 2rem 0px;
     margin: 0 -1.56rem;
     padding: .2rem 0;
-}
-
-.bg_blue_ingredients_list {
-    background: var(--color-primary);
-    padding: 1.5rem;
-    border-radius: 2.25rem 0px;
-    color: #FFF;
 }
 
 .bg_blue_ingredients_list h2 {
@@ -2504,33 +2480,6 @@ a:hover {
     margin-bottom: 22px;
 }
 
-.card-title {
-    display: flex;
-    align-items: center;
-    font-family: 'Verlag';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
-    margin: 24px 0;
-    min-height: 64px;
-}
-
-.card-text {
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 325;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-
-.btn-card {
-    text-align: center;
-    margin-bottom: 26px;
-}
-
 .btn-buy.card-button {
     background-color: #D3480D;
     color: #fff;
@@ -2609,32 +2558,8 @@ a:hover {
     margin: 1.5rem 0;
 }
 
-.product-wapper {
-    font-family: 'Verlag';
-    font-style: normal;
-    font-weight: 450;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-}
-
-.product-wapper::before {
-    position: absolute;
-    content: url('../images/product/icon-before.svg');
-}
-
 .product-text {
     padding: 0.6rem 0;
-}
-
-.gradient-bg {
-    background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
-    border-radius: 2rem 0px;
-}
-
-.product-desc-bg {
-    background: var(--color-primary);
-    padding: 1.5rem;
-    border-radius: 2.25rem 0px;
 }
 
 .add-to-cart {
@@ -2707,30 +2632,6 @@ a:hover {
     .card {
         width: auto;
     }
-
-    .card-title {
-        font-size: 20px;
-        line-height: 24px;
-        min-height: 24px;
-    }
-
-    .card-text {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .card-button {
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-    hr {
-        margin: 20px 0;
-    }
-
-    .btn-card {
-        margin-bottom: 15px;
-    }
 }
 
 
@@ -2789,10 +2690,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 992px) {
-	.mx-auto .row .col-lg-6{		 
-		width: auto; 
+	.mx-auto .row .col-lg-6{
+		width: auto;
 	}
-	.mx-auto .row{		  
+	.mx-auto .row{
 		display: inline-flex;
 	}
 }
@@ -2834,7 +2735,7 @@ a:hover {
 	flex-direction: column;
 	padding: 2.5rem 3.125rem 3.75rem;
 	margin-top: -9.375rem;
-	position: relative; 
+	position: relative;
 	background: url(../images/why-pharmaton-page/bg.png), #FFFFFF;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -2858,7 +2759,7 @@ a:hover {
 	margin: auto;
 }
 
-.feature-title-quest{	
+.feature-title-quest{
 	font-family: 'Verlag';
 	font-style: normal;
 	font-weight: 400;
@@ -2881,7 +2782,7 @@ a:hover {
 	line-height: 28px;
 }
 
-.feature-text{	
+.feature-text{
 	line-height: 24px;
 }
 

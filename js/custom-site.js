@@ -9,7 +9,7 @@ $('body').on('click', function () {
     $(".search-open").removeClass("search-close")
     $('.search-form').removeClass('open');
 
-    // Remove class open to close dropdown language 
+    // Remove class open to close dropdown language
     $(lang_menu).removeClass('open');
 
 });
@@ -86,6 +86,27 @@ $('.related-product-list').owlCarousel({
             loop: false,
             nav: false,
             items: 3
+        }
+    }
+})
+
+
+$('.other-product-list').owlCarousel({
+    margin: 0,
+    item: 2,
+    loop: false,
+    nav: false,
+    navText: ["<img src='../images/icon/slider-left.svg'>", "<img src='../images/icon/slider-right.svg'>"],
+    responsive: {
+        0: {
+            items: 1,
+            loop: true,
+            nav: true
+        },
+        992: {
+            loop: false,
+            nav: false,
+            items: 2
         }
     }
 })
