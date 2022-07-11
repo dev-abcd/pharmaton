@@ -54,18 +54,18 @@ function backToTop() {
 }
 
 $('#home-product-list').owlCarousel({
-    margin:0,
-    item:3,
-    loop:true,
-    nav:true,
-    navText:["<img src='./images/icon/slider-left.svg'>","<img src='./images/icon/slider-right.svg'>"],
-    responsive:{
-        0:{
-            items:1
+    margin: 0,
+    item: 3,
+    loop: true,
+    nav: true,
+    navText: ["<img src='./images/icon/slider-left.svg'>", "<img src='./images/icon/slider-right.svg'>"],
+    responsive: {
+        0: {
+            items: 1
         },
-        1000:{
-            loop:false,
-            items:3
+        1000: {
+            loop: false,
+            items: 3
         }
     }
 })
@@ -73,15 +73,18 @@ $('#home-product-list').owlCarousel({
 $('.related-product-list').owlCarousel({
     margin: 0,
     item: 3,
-    loop: true,
-    nav: true,
+    loop: false,
+    nav: false,
     navText: ["<img src='../images/icon/slider-left.svg'>", "<img src='../images/icon/slider-right.svg'>"],
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            loop: true,
+            nav: true
         },
         992: {
             loop: false,
+            nav: false,
             items: 3
         }
     }
