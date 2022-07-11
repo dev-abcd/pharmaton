@@ -474,7 +474,7 @@ button:focus {
 
 .product-title-icon>img {
     position: absolute;
-    width: 24.44px;
+    width: 1.5275rem;
     left: 22.22%;
     right: 22.22%;
     top: 22.22%;
@@ -551,7 +551,7 @@ button:focus {
 
 .product-item-button {
     margin-top: 2rem;
-    column-gap: 24px;
+    column-gap: 1.5rem;
     flex-direction: row;
     justify-content: center;
 }
@@ -877,7 +877,6 @@ button:focus {
 }
 
 @media only screen and (max-width: 768px) {
-
     .term-policy-title-wrapper,
     .term-policy-content-wrapper {
         padding: 1rem 1.5rem;
@@ -1066,7 +1065,7 @@ button:focus {
     background: url(../images/backgroup-product-related-top.png) no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    height: 131px;
+    height: 8.1875rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -1180,11 +1179,6 @@ button:focus {
     align-items: center;
 }
 
-.breadcrumb li {
-    position: relative;
-    padding-left: 30px;
-}
-
 .breadcrumb li+li:before {
     padding: 0 0.75rem;
     width: 0.875rem;
@@ -1244,7 +1238,7 @@ button:focus {
 .card-readmore a {
     color: #9CA2FC;
     position: relative;
-    padding-right: 15px;
+    padding-right: 0.9375rem;
 }
 
 .card-readmore a::after {
@@ -1256,11 +1250,6 @@ button:focus {
     bottom: 0;
     margin: auto;
 }
-
-
-
-
-
 
 /* Định đạng footer */
 
@@ -1510,7 +1499,7 @@ footer .social-links a {
 .bg_blue_ingredients_list {
     background: var(--color-primary);
     padding: 1.5rem;
-    border-radius: 2.25rem 0px;
+    border-radius: 2.25rem 0;
     color: #FFF;
 }
 
@@ -1528,7 +1517,6 @@ footer .social-links a {
 
 .ingredients_list li {
     font-size: 1.1875rem;
-    ;
     margin-bottom: 1rem;
     position: relative;
 }
@@ -1565,13 +1553,6 @@ footer .social-links a {
 }
 
 /**/
-.other_product {
-    width: 100%;
-    background: #fedcb6 url(../images/pharmaton-essential/bg_other_pro_.svg) no-repeat center top;
-    background-size: 100% auto;
-    height: auto;
-}
-
 #show_other_product_mobile {
     display: none;
 }
@@ -1643,7 +1624,7 @@ footer .social-links a {
     position: relative;
     display: inline-block;
     background: #053385;
-    border-radius: 32px;
+    border-radius: 2rem;
     width: 2.75rem;
     height: 2.75rem;
 }
@@ -1686,10 +1667,10 @@ footer .social-links a {
     display: block;
     padding: 1rem 1.25rem;
     border: 1px solid #053385;
-    border-radius: 32px;
+    border-radius: 2rem;
     width: 11.25rem;
-    font-size: 11px;
-    line-height: 28px;
+    font-size: 0.6875rem;
+    line-height: 1.75rem;
 }
 
 /* ---- search result ----- */
@@ -1788,7 +1769,7 @@ footer .social-links a {
 .result-list-wrapper .card {
     align-items: center;
     position: relative;
-    border-radius: 1.5rem 0px;
+    border-radius: 1.5rem 0;
     background-color: #FFF8EF;
     height: 100%;
     padding: 1.5rem;
@@ -1913,35 +1894,6 @@ footer .social-links a {
     }
 }
 
-.post-card-item {
-    background: #FFFFFF;
-    border-radius: 1.5rem 0px;
-}
-
-.post-card-item-img {
-    width: 100%;
-}
-
-.card-readmore {
-    text-align: right;
-}
-
-.card-readmore a {
-    color: #9CA2FC;
-    position: relative;
-    padding-right: 15px;
-}
-
-.card-readmore a::after {
-    position: absolute;
-    content: url(../images/icon/pharmaton-arrow-right.svg);
-    color: #9CA2FC;
-    right: 0;
-    top: 0.125rem;
-    bottom: 0;
-    margin: auto;
-}
-
 .more-energy-section {
     padding: 2.875rem 0 9.75rem 0;
     background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
@@ -1954,9 +1906,9 @@ footer .social-links a {
 .card {
     width: 423px;
     background: linear-gradient(359.75deg, #F9C71C 0.21%, #D3480D 99.76%);
-    border-radius: 32px 0px;
+    border-radius: 2rem 0;
     border: unset;
-    margin-bottom: 22px;
+    margin-bottom: 1.375rem;
 }
 
 .card-title {
@@ -1991,7 +1943,7 @@ footer .social-links a {
 
 
 .content {
-    margin: 50px 0;
+    margin: 3.125rem 0;
 }
 
 .more-energy-heading {
@@ -2015,7 +1967,7 @@ footer .social-links a {
     padding: 1.5rem;
     margin: 0 1.5rem 1.5rem 1.5rem;
     background: #FFFFFF;
-    border-radius: 1.5rem 0px;
+    border-radius: 1.5rem 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2024,14 +1976,14 @@ footer .social-links a {
     }
 
     .card-title {
-        font-size: 20px;
-        line-height: 24px;
-        min-height: 24px;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        min-height: 1.5rem;
     }
 
     .card-text {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
     }
 
     .card-button {
@@ -2204,12 +2156,15 @@ a:hover {
 .product-content-right {
     padding: 1.5rem;
 }
+
 .product-mg {
     margin: 3.25rem 0;
 }
+
 .product-description {
     margin: 1.5rem 0;
 }
+
 .product-text {
     padding: 0.6rem 0;
 }
@@ -2236,9 +2191,10 @@ a:hover {
 .warning-section h3::before{
 	z-index: -1;
 }
+
 .bg_ingredients_list {
     background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
-    border-radius: 2rem 0px;
+    border-radius: 2rem 0;
     margin: 0 -1.56rem;
     padding: .2rem 0;
 }
@@ -2263,12 +2219,13 @@ a:hover {
     line-height: 1.06rem;
     border-radius: 4.25rem;
     padding: 0.35rem 0.35rem 0.2rem 0.35rem;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
 }
 
 .question {
     margin: 1rem 0;
 }
+
 .faq-question {
     font-family: 'Gotham';
     font-style: normal;
@@ -2283,6 +2240,7 @@ a:hover {
     align-items: flex-start;
     margin-left: 2.5rem;
 }
+
 .circle-a {
     opacity: 0.2;
     background: var(--color-primary);
@@ -2294,45 +2252,14 @@ a:hover {
 }
 
 .question ul {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .warning-section {
     background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
-    border-radius: 2.25rem 0px;
+    border-radius: 2.25rem 0;
     padding: 1.25rem 1.5rem 0.75rem;
     margin: 0 -1.56rem;
-}
-
-/**/
-.ingredients_list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.ingredients_list li {
-    font-size:1.1875rem;;
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-.ingredients_list li:before {
-    float: left;
-    width: 100%;
-    position: absolute;
-    content: '';
-    border-bottom: dotted #FFF .1rem;
-    bottom: 0;
-    z-index: 1;
-}
-
-.ingredients_list li span:first-child {
-    padding-right: 0.33em;
-    background: var(--color-primary);
-    position: relative;
-    z-index: 2;
-	padding-bottom: 0.2rem;
 }
 
 .ingredients_list li span + span {
@@ -2343,69 +2270,29 @@ a:hover {
     position: relative;
 }
 
-.hide_dot {
-    list-style: none;
-    margin-left: -1.5rem;
-}
-
 .other_product {
     width: 100%;
     background: #fedcb6 url(../images/pharmaton-essential/bg_other_pro_.svg) no-repeat center top;
     background-size: 100% auto;
     height: auto;
 }
-#show_other_product_mobile{
-	display: none;
-}
-.sub_bg_other_product{
-	width: 100%;
-    background:  url(../images/pharmaton-essential/bg_sub_other_pro.svg) no-repeat center center, url(../images/pharmaton-essential/bg_sub1_other_pro.png) repeat center bottom;
-    background-size: 100% auto;
-    height: auto;
-	padding-top:12rem;
-}
 
-.other_product h1 {
-    font-family: 'Verlag';
-    font-size: 3.25rem;
-    color: var(--color-primary);
-    text-align: center;
-    margin: 0 0 2rem;
-}
-.product-detail {
-    margin: 1.5rem 0;
-}
-.product-detail img {
-	padding-bottom:1.75rem;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height:11.75rem;
-}
-.product-detail-wrapper{
-	font-size:1.5rem;
-	font-family: 'Verlag';
-    font-style: normal;
-    font-weight: 450;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-}
-.carousel-inner.font-carousel-inner{
+.carousel-inner.font-carousel-inner {
 	width: 21.875rem;
 	margin: 0 auto;
 }
 
 .product-section {
-    padding: 46px 0px 156px 0px;
+    padding: 2.875 0 9.75rem 0;
     background: url('../images/product/product-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .product-heading-icon {
-    margin-bottom: 16px;
-    width: 52px;
-    height: 52px;
+    margin-bottom: 1rem;
+    width: 3.25rem;
+    height: 3.25rem;
 }
 
 .product-heading-title {
@@ -2416,32 +2303,9 @@ a:hover {
     letter-spacing: 0.01em;
 }
 
-.more-energy {
-    margin: 88px 0px 156px 0px;
-}
-
-.card {
-    width: 423px;
-    background: linear-gradient(359.75deg, #F9C71C 0.21%, #D3480D 99.76%);
-    border-radius: 32px 0px;
-    border: unset;
-    margin-bottom: 22px;
-}
-
 .btn-buy.card-button {
     background-color: #D3480D;
     color: #fff;
-}
-
-.line-hr {
-    margin: 36px 0;
-    color: #fff;
-}
-
-.breadcrumb {
-    padding: 0.875rem 0;
-    list-style: none;
-    align-items: center;
 }
 
 .breadcrumb li:first-child {
@@ -2453,102 +2317,11 @@ a:hover {
     padding-left: 2.1875rem;
 }
 
-.breadcrumb li+li:before {
-    padding: 0 0.75rem;
-    width: 0.875rem;
-    height: 0.875rem;
-    content: url(../images/more-energy/arrow-next.svg);
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    left: 0.3125rem;
-}
-
-.normal-wapper {
-    background: linear-gradient(0deg, #F6F6F6, #F6F6F6), linear-gradient(0deg, rgba(253, 171, 137, 0.25), rgba(253, 171, 137, 0.25)), #FFFFFF;
-}
-
-.breadcrumb li:first-child a {
-    width: 1.5rem;
-    height: 1.5rem;
-    content: url('../images/more-energy/Home.svg');
-}
-
-.product-content-right {
-    padding: 1.5rem;
-}
-
-.product-mg {
-    margin: 3.25rem 0;
-}
-
-.product-description {
-    margin: 1.5rem 0;
-}
-
-.product-text {
-    padding: 0.6rem 0;
-}
-
 .add-to-cart {
     background: var(--color-orange);
     border-radius: 2.25rem;
     padding: 1.375rem;
     text-align: center;
-}
-
-.circle-q {
-    background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
-    font-size: 0.875rem;
-    line-height: 1.06rem;
-    border-radius: 4.25rem;
-    padding: 0.35rem 0.35rem 0.2rem 0.35rem;
-    margin-right: 5px;
-}
-
-.question {
-    margin: 1rem 0;
-}
-
-.faq-question {
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 700;
-    color: var(--color-primary);
-    display: flex;
-    align-items: flex-start;
-}
-
-.faq-answer {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 2.5rem;
-}
-
-.circle-a {
-    opacity: 0.2;
-    background: var(--color-primary);
-    color: #ffa;
-    margin-right: 0.31rem;
-    padding: 0 0.5rem;
-    text-align: center;
-    border-radius: 6.25rem;
-}
-
-.question ul {
-    margin-left: 20px;
-}
-
-.warning-section {
-    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
-    border-radius: 2.25rem 0px;
-    padding: 1.25rem 1.5rem 0.75rem;
-    margin: 0 -1.56rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2670,9 +2443,9 @@ a:hover {
 	position:relative;
 	display: inline-block;
 	background: #053385;
-	border-radius: 32px;
-	width: 44px;
-	height: 44px;
+	border-radius: 2rem;
+	width: 2.75rem;
+	height: 2.75rem;
 }
 .contact-img-question img {
 	position: absolute;
@@ -2687,17 +2460,17 @@ a:hover {
 	margin:auto;
 	display:block;
 	justify-content: center;
-	padding: 1rem 20px;
+	padding: 1rem 1.25rem;
 	border: 1px solid #053385;
-	border-radius: 32px;
-	width: 180px;
+	border-radius: 2rem;
+	width: 11.25rem;
 	font-weight: 400;
-	font-size: 11px;
-	line-height: 28px;
+	font-size: 0.6875rem;
+	line-height: 1.75rem;
 }
 
 .feature-text {
-	line-height: 24px;
+	line-height: 1.5rem;
 }
 
 .btn-learn-more {
