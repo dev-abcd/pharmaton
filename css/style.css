@@ -1481,140 +1481,6 @@ footer .social-links a {
     z-index: 99;
 }
 
-/*contact-us*/
-.contact-title-wrapper {
-    padding-bottom: 8rem;
-}
-
-.row.background-contact {
-    height: 13.375rem;
-    padding: 1rem 0rem;
-}
-
-.row.color {
-    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
-}
-
-.feature-title {
-    font-family: 'Verlag';
-    font-size: 3.25rem;
-    line-height: 3.25rem;
-    color: var(--color-primary);
-}
-
-.contact-img-phone {
-    position: relative;
-    display: inline-block;
-    background: var(--color-primary);
-    border-radius: 2rem;
-    width: 3.25rem;
-    height: 3.25rem;
-}
-
-.contact-img-phone img {
-    position: absolute;
-    left: 12.5%;
-    right: 12.5%;
-    top: 16.67%;
-    bottom: 16.55%;
-}
-
-.contact-content {
-    color: var(--color-primary);
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 350;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.01em;
-    padding-top: 1.25rem;
-}
-
-.contact-row-height-content {
-    display: inherit;
-}
-
-.contact-border-left-organge {
-    background: #DA372B;
-    border: 0.25rem solid #DA372B;
-}
-
-.contact-content p {
-    text-align: left;
-    padding: 0.625rem 0 0.625rem 0.625rem;
-    margin-bottom: 0;
-}
-
-.contact-img-content {
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 0.625rem 0.75rem 0.625rem 0.625rem;
-}
-
-.link {
-    text-decoration-line: underline;
-    color: var(--color-primary);
-}
-
-a:hover {
-    color: var(--color-primary);
-}
-
-/*error*/
-.error-tittle-wrapper {
-    background: url(../images/error/bg-error.svg) center no-repeat;
-    background-size: cover;
-    height: 41.375rem;
-}
-
-.row.bg-content-text {
-    padding-top: 1.3125rem;
-}
-
-.img-oobs {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.img-oobs img {
-    width: 100%;
-    height: auto;
-}
-
-.text-404 {
-    font-family: 'Verlag';
-    font-size: 2.5625rem;
-    padding-top: 1.25rem;
-    text-align: center;
-    color: var(--color-primary);
-}
-
-.text-page {
-    padding: 0.6875rem;
-    font-family: 'Gotham';
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: center;
-}
-
-.add-to-cart {
-    border-radius: 2.25rem;
-    padding: 1.375rem;
-    text-align: center;
-}
-
-.btn-back-home {
-    width: 14.125rem;
-    height: 3.75rem;
-    padding: 0rem 1rem;
-    border-radius: 2rem;
-}
-
-@media screen and (max-width:768px) {
-    .text-404 {
-        font-size: 1.5rem;
-    }
-}
 
 /*essential*/
 
@@ -2225,33 +2091,36 @@ a:hover {
 
 
 /* Định dạng trang error */
+/*error*/
+.error-tittle-wrapper {
+    background: url(../images/error/bg-error.svg) center no-repeat;
+    background-size: cover;
+    height: 41.375rem;
+}
 
-.normal-wrapper{
-	background:url(../images/error/bg-error.svg) center no-repeat;
-	background-size:cover;
-	height:41.375rem;
+.row.bg-content-text {
+    padding-top: 1.3125rem;
 }
-.row.bg-content-text{
-	padding-top:1.3125rem;
-}
-.img-oobs{
-	/*width:42.8125rem;
-	height:14.3125rem;*/
+
+.img-oobs {
     margin-left: auto;
     margin-right: auto;
 }
-.img-oobs img{
-		width:100%;
-		height:auto;
-	}
-.text-1{
-	font-family: 'Verlag';
-	font-size: 2.5625rem;
-	padding-top:1.25rem;
-	text-align: center;
-	color: var(--color-primary);
+
+.img-oobs img {
+    width: 100%;
+    height: auto;
 }
-.text-2{
+
+.text-404 {
+    font-family: 'Verlag';
+    font-size: 2.5625rem;
+    padding-top: 1.25rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.text-page {
     padding: 0.6875rem;
     font-family: 'Gotham';
     font-size: 1rem;
@@ -2259,95 +2128,112 @@ a:hover {
     text-align: center;
 }
 
-.add-to-cart {
+.add-to-cart-error{
     border-radius: 2.25rem;
     padding: 1.375rem;
     text-align: center;
 }
-.btn-back-home{
-	width: 14.125rem;
-	height: 3.75rem;
-	padding: 0rem 1rem;
-	border-radius: 2rem;
+
+.btn-back-home {
+    width: 14.125rem;
+    height: 3.75rem;
+    padding: 0rem 1rem;
+    border-radius: 2rem;
 }
 
-@media screen and (max-width:768px){
-	
-	.text-1{
-		font-size: 1.5rem;
-	}
+@media screen and (max-width:768px) {
+    .text-404 {
+        font-size: 1.5rem;
+    }
 }
 
 
 /* Định dạng trang contact */
 
-.normal-wrapper{
-	min-height: 8rem;
-    padding-bottom: 6.875rem;
-    padding-top: 0rem;
+.contact-title-wrapper {
+    padding-bottom: 8rem;
 }
-.row.background-contact{ 
-	height: 13.375rem;
-	padding: 1rem 0rem;
+
+.row.background-contact {
+    height: 13.375rem;
+    padding: 1rem 0rem;
 }
-.row.color{
-	background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
+
+.row.color {
+    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
 }
-.feature-title{	
-	font-family: 'Verlag';
-	font-style: normal;
-	font-weight: 450;
-	font-size: 3.25rem;
-	line-height: 3.25rem;
-	text-align:left;
-	color: var(--color-primary);
+
+.feature-title {
+    font-family: 'Verlag';
+    font-size: 3.25rem;
+    line-height: 3.25rem;
+    color: var(--color-primary);
 }
-.contact-img-phone{
-	position:relative;
-	display: inline-block;
-	background:  var(--color-primary);
-	border-radius: 2rem;
-	width: 3.25rem;
-	height: 3.25rem;
+
+.contact-img-phone {
+    position: relative;
+    display: inline-block;
+    background: var(--color-primary);
+    border-radius: 2rem;
+    width: 3.25rem;
+    height: 3.25rem;
 }
-.contact-img-phone img{
-	position:absolute;
-	left: 12.5%;
-	right: 12.5%;
-	top: 16.67%;
-	bottom: 16.55%;
+
+.contact-img-phone img {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 16.67%;
+    bottom: 16.55%;
 }
-.contact-content{ 
-	color:var(--color-primary);
-	font-family: 'Gotham';
-	font-style: normal;
-	font-weight: 350;
-	font-size: 1rem;
-	line-height: 1.5rem; 
-	letter-spacing: 0.01em;
-	padding-top:1.25rem;  
+
+.contact-content {
+    color: var(--color-primary);
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.01em;
+    padding-top: 1.25rem;
 }
-.contact-row-height-content{
-	min-height:1.875rem;	
-	display: inherit;
+
+.contact-row-height-content {
+    display: inherit;
 }
-.contact-border-left-organge{
- 	background: #DA372B;
-	border: 0.25rem solid #DA372B; 
+
+.contact-border-left-bottom-organge {
+    background: #DA372B;
+    border: 0.0625rem solid #DA372B;
+	width: 0.375rem;
 }
-.contact-content p{
-	 text-align: left;
-	 padding: 0.625rem 0 0.625rem 0.625rem;
-	 margin-bottom: 0;
+.contact-border-left-top-organge {
+    background: #DA372B;
+    border: 0.0625rem solid #000;
+    width: 0.375rem;
 }
-.contact-img-content{
-	width: 1.5rem;
-	height: 1.5rem;
-	padding: 0.625rem 0.75rem 0.625rem 0.625rem;
+.contact-content p {
+    text-align: left;
+    padding: 0.625rem 0 0.625rem 0.625rem;
+    margin-bottom: 0;
 }
-.link{
-	text-decoration-line: underline;
-	color: var(--color-primary);
+
+.contact-img-content {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.625rem 0.75rem 0.625rem 0.625rem;
+}
+
+.link {
+    text-decoration-line: underline;
+    color: var(--color-primary);
+}
+.contact-mail{
+	color: var(--color-dark);
+	text-shadow: 0rem 0.25rem 0.25rem rgb(0 0 0 / 25%);
+}
+a:hover {
+    color: var(--color-primary);
 }
 
 /* Định đạng trang chi tiết sản phẩm */
@@ -2846,15 +2732,10 @@ a:hover {
 
 
 /* Định dạng where to buy */
-
-.wtb-section {
-    margin: 46px 0px 168px 0px;
-}
-
 .wtb-icon {
-    margin-bottom: 16px;
-    width: 52px;
-    height: 52px;
+    margin-bottom: 1rem;
+    width: 3.25rem;
+    height: 3.25rem;
 }
 
 .wtb-title {
@@ -2866,63 +2747,78 @@ a:hover {
 }
 
 .wtb-description {
-    margin-top: 32px;
+    margin-top: 2rem;
     font-family: 'Gotham';
     font-style: normal;
     font-weight: 325;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     letter-spacing: 0.01em;
     color: #053385;
 }
-
-.wtb-img-r {
-    float: right;
-    margin-right: 20px;
-    margin-top: 68px;
+.bg-img{
+	background: #FFFFFF center;
+	border-radius: 1.5rem 0rem;
+	padding:1rem;
+	width: 13rem;
+	height: 13rem;
+	position:relative;
 }
 
-.wtb-img-l {
-    float: left;
-    margin-left: 20px;
-    margin-top: 68px;
+.bg-img.bg-lazada{
+	float: right;
+	margin-top:4rem;
+}
+.bg-img.bg-shopee{
+	float: left;
+	margin-top:4rem;
+}
+.bg-img img{
+	width: 9.5rem;
+	height: 9.5rem;
+	vertical-align:middle;
+	margin: auto;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
+@media only screen and (max-width: 992px) {
+	.mx-auto .row .col-lg-6{		 
+		width: auto; 
+	}
+	.mx-auto .row{		  
+		display: inline-flex;
+	}
+}
 @media only screen and (max-width: 768px) {
     .wtb-icon {
-        margin-bottom: 12px;
-        width: 28px;
-        height: 28px;
+        margin-bottom: 0.75rem;
+        width: 1.75rem;
+        height: 1.75rem;
     }
 
     .wtb-title {
-        font-size: 28px;
-        line-height: 24px;
+        font-size: 1.75rem;
+        line-height: 1.5rem;
     }
 
     .wtb-description {
-        margin-top: 20px;
-        font-size: 14px;
-        line-height: 20px;
+        margin-top: 0.25rem;
+        font-size: 0.875rem;
+        line-height: 1.75rem;
     }
 
-    .wtb-img-r {
-        float: right;
-        margin-right: 10px;
-        margin-top: 28px;
-    }
-
-    .wtb-img-l {
-        float: left;
-        margin-left: 10px;
-        margin-top: 28px;
-    }
-
-    .wtb-img-r img,
-    .wtb-img-l img {
-        width: 156px;
-        height: 156px;
-    }
+   .bg-img{
+	   width:9.75rem;
+	   height:9.75rem;
+   }
+   .bg-img img{
+	   width:7.125rem;
+	   height:7.125rem;
+   }
 }
 
 
