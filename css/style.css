@@ -1055,11 +1055,6 @@ button:focus {
     }
 }
 
-.related .product-list {
-    overflow: unset;
-    padding-top: 14rem;
-}
-
 .related .product-title-wrapper {
     background: none;
 }
