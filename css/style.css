@@ -34,9 +34,11 @@ body {
 a {
     text-decoration: none;
 }
-a:hover{
-	color: inherit;
+
+a:hover {
+    color: inherit;
 }
+
 ol,
 ul,
 dl,
@@ -191,7 +193,7 @@ button:focus {
 }
 
 .menu {
-    padding:0 4rem;
+    padding: 0 4rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -436,62 +438,62 @@ button:focus {
     transform: rotate(-90deg);
 }
 
+.title-wrapper {
+    padding-top: 4rem;
+    position: relative;
+}
+
+.title-wrapper::before {
+    position: absolute;
+    content: url(../images/icon/pharmaton-product.svg);
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-primary);
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+}
 
 /*---------Định đạng trang home----------*/
 .bg-home {
-    background: linear-gradient(0deg, rgba(253, 182, 52, 0.3), rgba(253, 182, 52, 0.3)), linear-gradient(0deg, rgba(253, 171, 137, 0.4), rgba(253, 171, 137, 0.4)), #FFFFFF;
+    background: linear-gradient(0deg, rgba(253, 182, 52, 0.3), rgba(253, 182, 52, 0.3)),
+        linear-gradient(0deg, rgba(253, 171, 137, 0.4), rgba(253, 171, 137, 0.4)), #FFFFFF;
 }
 
-.banner {
-    padding-bottom: 2rem;
-}
-
-.product-title-wrapper {
+.why-pharmaton {
+    max-width: 866px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 3.125rem 3.75rem;
+    margin-top: -9.375rem;
     position: relative;
-    padding: 0;
-    background: url(../images/index/product-list-frame.png);
-    background-position: top;
-    background-size: 100% 50%;
+    background: url(../images/why-pharmaton-page/bg.png), #FFFFFF;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 2.5rem 0rem;
 }
-
 
 .product-list {
     margin: 0;
     padding-top: 12rem;
+    padding-left: 0;
+    padding-right: 0;
     overflow: hidden;
 }
 
-.product-title-icon {
-    min-width: 2.75rem;
-    max-width: 2.75rem;
-    height: 2.75rem;
-    background: var(--color-primary);
-    margin: auto;
-    border-radius: 2rem;
-    position: relative;
+.product-list.owl-carousel .owl-stage-outer {
+    overflow: unset;
 }
 
-.product-title-icon>img {
-    position: absolute;
-    width: 1.5275rem;
-    left: 22.22%;
-    right: 22.22%;
-    top: 22.22%;
-    bottom: 22.22%;
-    padding: 0;
-}
-
-.product-title-text {
-    font-family: 'Verlag';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.01em;
-    margin-top: 1.25rem;
-    padding: 0;
-    color: var(--color-primary);
+.product-list.owl-carousel .owl-stage {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .product-item {
@@ -500,10 +502,6 @@ button:focus {
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.bg-home .product-bg-white {
-    background: var(--color-white);
 }
 
 .product-img-placeholder {
@@ -550,7 +548,8 @@ button:focus {
 }
 
 .product-item-button {
-    margin-top: 2rem;
+    margin-top: 2.75rem;
+    padding: 0 1.5rem;
     column-gap: 1.5rem;
     flex-direction: row;
     justify-content: center;
@@ -567,31 +566,23 @@ button:focus {
 }
 
 .card-button {
-    background: #FFFFFF;
     border-radius: 2rem;
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 350;
-    font-size: 1rem;
-    line-height: 1rem;
     letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: var(--color-primary);
     padding: 1.375rem 1.8125rem;
 }
 
 
 .article-list .btn-card {
-    margin-top: 5rem;
     position: relative;
-    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 .article-list .btn-card::before {
     position: absolute;
     content: "";
     left: 0;
-    top: -3rem;
+    top: -0;
     background: url(../images/more-energy/line.svg) no-repeat;
     background-size: 100%;
     width: 100%;
@@ -615,49 +606,58 @@ button:focus {
     color: white;
 }
 
-.owl-nav,
-.owl-dots {
+.product-list .owl-nav,
+.product-list .owl-dots {
     background-color: white;
 }
 
-.end-product-list-wrapper {
-    position: relative;
-    height: 2rem;
-    background-color: white;
-}
 
-.end-product-list-wrapper>img {
-    width: 100%;
-    height: 10rem;
-    position: absolute;
-    left: 0;
-    top: -3.5rem;
-    z-index: 5;
-}
 
 .see-more-link {
     padding-top: 7rem;
 }
 
-.end-product-list-wrapper>.read-more {
+.end-product-list-wrapper {
+    position: relative;
+}
+
+.end-product-list-wrapper::before {
     position: absolute;
-    left: 25%;
-    right: 25%;
-    bottom: -4.4rem;
+    content: "";
+    background-image: url("../images/backgroup-product-related-top.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 8.1875rem;
+    background-size: 100% 100%;
+    bottom: -5rem;
+    z-index: 8;
+    left: 0;
+    right: 0;
+}
+
+.end-product-list-wrapper .read-more {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 3.25rem;
     z-index: 10;
 }
 
-.read-more {
-    font-weight: 350;
-    font-size: 1rem;
-    line-height: 1rem;
-    color: var(--color-primary);
-    text-decoration: underline;
+@media screen and (max-width: 767px) {
+    .end-product-list-wrapper::before {
+        background-size: 100%;
+        bottom: -7.3rem;
+    }
 }
+
 
 #article-list-section {
     padding-top: 10rem;
     padding-bottom: 4.375rem;
+}
+
+.article-list-section .title-wrapper::before {
+    content: url("../images/icon/pharmaton-energy.svg");
 }
 
 .energy-title-icon {
@@ -727,21 +727,8 @@ button:focus {
     right: 1.5rem;
 }
 
-.end-product-list-wrapper .read-more {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    top: 5.25rem;
-    z-index: 10;
-    font-weight: 350;
-    font-size: 1rem;
-    line-height: 1rem;
-    color: var(--color-primary);
-    text-decoration: underline;
-}
 
-/*------- End Định dạng trang home --------*/
+
 
 /*------- Định dạng trang term & policy -------*/
 #term-policy-title>.container-fluid {
@@ -877,6 +864,7 @@ button:focus {
 }
 
 @media only screen and (max-width: 768px) {
+
     .term-policy-title-wrapper,
     .term-policy-content-wrapper {
         padding: 1rem 1.5rem;
@@ -930,26 +918,10 @@ button:focus {
 }
 
 /*---------Định đạng trang products=----------*/
-#product-list-section {
-    background: #FFDDB6;
-}
-
-.text-transform-upercase {
-    text-transform: uppercase;
-}
 
 .products-listing {
     padding-top: 2rem;
 }
-
-.margin-top-25 {
-    margin-top: 1.25rem;
-}
-
-.product-item {
-    background: linear-gradient(180deg, #FFFFFF 0%, #FFDDB6 100%);
-}
-
 
 .products-listing .product-hr {
     position: relative;
@@ -1102,20 +1074,6 @@ button:focus {
     padding-top: 8rem;
 }
 
-.related .owl-carousel .owl-stage {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.related .owl-carousel .owl-stage-outer {
-    overflow: unset;
-}
-
-.related .product-item-button {
-    margin-top: 2.75rem;
-    padding: 0 1.5rem;
-}
-
 .related .product-item-button a {
     width: 11.25rem;
     height: 4.125rem;
@@ -1137,7 +1095,7 @@ button:focus {
 }
 
 @media screen and (max-width:992px) {
-    .related .product-list {
+    .product-list {
         overflow: hidden;
     }
 }
@@ -1280,7 +1238,8 @@ footer .legal-links li::after {
     bottom: 0;
     margin: auto;
 }
-footer .legal-links li a:hover{
+
+footer .legal-links li a:hover {
     color: var(--color-white);
 }
 
@@ -1914,16 +1873,8 @@ footer .social-links a {
 .card-title {
     display: flex;
     align-items: center;
-    font-style: normal;
-    font-weight: 450;
     margin: 1.5rem 0;
     min-height: 4rem;
-}
-
-.card-text {
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 325;
 }
 
 .btn-card {
@@ -1973,12 +1924,6 @@ footer .social-links a {
 @media only screen and (max-width: 768px) {
     .card {
         width: auto;
-    }
-
-    .card-title {
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-        min-height: 1.5rem;
     }
 
     .card-text {
@@ -2040,7 +1985,7 @@ footer .social-links a {
     text-align: center;
 }
 
-.add-to-cart-error{
+.add-to-cart-error {
     border-radius: 2.25rem;
     padding: 1.375rem;
     text-align: center;
@@ -2117,13 +2062,15 @@ footer .social-links a {
 .contact-border-left-bottom-organge {
     background: #DA372B;
     border: 0.0625rem solid #DA372B;
-	width: 0.375rem;
+    width: 0.375rem;
 }
+
 .contact-border-left-top-organge {
     background: #DA372B;
     border: 0.0625rem solid #000;
     width: 0.375rem;
 }
+
 .contact-content p {
     text-align: left;
     padding: 0.625rem 0 0.625rem 0.625rem;
@@ -2140,13 +2087,16 @@ footer .social-links a {
     text-decoration-line: underline;
     color: var(--color-primary);
 }
-.contact-mail{
-	color: var(--color-dark);
-	text-shadow: 0rem 0.25rem 0.25rem rgb(0 0 0 / 25%);
+
+.contact-mail {
+    color: var(--color-dark);
+    text-shadow: 0rem 0.25rem 0.25rem rgb(0 0 0 / 25%);
 }
-.contact-text{
-	color: var(--color-primary);
+
+.contact-text {
+    color: var(--color-primary);
 }
+
 a:hover {
     color: #00F;
 }
@@ -2175,21 +2125,23 @@ a:hover {
     font-weight: 450;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-	padding:.6rem 0;
+    padding: .6rem 0;
 }
 
 .product-wapper::before {
     position: absolute;
     content: url('../images/product/icon-before.svg');
-	z-index: -1;
+    z-index: -1;
 }
-.product-wapper, .bg_blue_ingredients_list > * {
-    position:relative;
+
+.product-wapper,
+.bg_blue_ingredients_list>* {
+    position: relative;
     z-index: 2;
 }
 
-.warning-section h3::before{
-	z-index: -1;
+.warning-section h3::before {
+    z-index: -1;
 }
 
 .bg_ingredients_list {
@@ -2213,6 +2165,7 @@ a:hover {
     line-height: 1rem;
     letter-spacing: 0.01em;
 }
+
 .circle-q {
     background: linear-gradient(25.69deg, #F9C71C 0%, #D3480D 102.23%);
     font-size: 0.875rem;
@@ -2262,7 +2215,7 @@ a:hover {
     margin: 0 -1.56rem;
 }
 
-.ingredients_list li span + span {
+.ingredients_list li span+span {
     float: right;
     padding-left: 0.33em;
     background: var(--color-primary);
@@ -2278,8 +2231,8 @@ a:hover {
 }
 
 .carousel-inner.font-carousel-inner {
-	width: 21.875rem;
-	margin: 0 auto;
+    width: 21.875rem;
+    margin: 0 auto;
 }
 
 .product-section {
@@ -2355,31 +2308,32 @@ a:hover {
     letter-spacing: 0.01em;
     color: #053385;
 }
-.bg-img{
-	background: #FFFFFF center;
-	border-radius: 1.5rem 0rem;
-	padding:1rem;
-	width: 13rem;
-	height: 13rem;
-	position:relative;
+
+.bg-img {
+    background: #FFFFFF center;
+    border-radius: 1.5rem 0rem;
+    padding: 1rem;
+    width: 13rem;
+    height: 13rem;
+    position: relative;
 }
 
-.bg-img.bg-lazada{
-	float: right;
-	margin-top:4rem;
+.bg-img.bg-lazada {
+    float: right;
+    margin-top: 4rem;
 }
 
-.bg-img.bg-shopee{
-	float: left;
-	margin-top:4rem;
+.bg-img.bg-shopee {
+    float: left;
+    margin-top: 4rem;
 }
 
-.bg-img img{
-	width: 9.5rem;
-	height: 9.5rem;
-	vertical-align:middle;
-	margin: auto;
-	position: absolute;
+.bg-img img {
+    width: 9.5rem;
+    height: 9.5rem;
+    vertical-align: middle;
+    margin: auto;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -2387,13 +2341,15 @@ a:hover {
 }
 
 @media only screen and (max-width: 992px) {
-	.mx-auto .row .col-lg-6{
-		width: auto;
-	}
-	.mx-auto .row{
-		display: inline-flex;
-	}
+    .mx-auto .row .col-lg-6 {
+        width: auto;
+    }
+
+    .mx-auto .row {
+        display: inline-flex;
+    }
 }
+
 @media only screen and (max-width: 768px) {
     .wtb-icon {
         margin-bottom: 0.75rem;
@@ -2412,74 +2368,61 @@ a:hover {
         line-height: 1.75rem;
     }
 
-   .bg-img{
-	   width:9.75rem;
-	   height:9.75rem;
-   }
-   .bg-img img{
-	   width:7.125rem;
-	   height:7.125rem;
-   }
+    .bg-img {
+        width: 9.75rem;
+        height: 9.75rem;
+    }
+
+    .bg-img img {
+        width: 7.125rem;
+        height: 7.125rem;
+    }
 }
 
 /* Định dạng Why Pharmaton */
 
-.why-pharmaton{
-    max-width: 866px;
-    margin: 0 auto;
-	display:flex;
-	flex-direction: column;
-	padding: 2.5rem 3.125rem 3.75rem;
-	margin-top: -9.375rem;
-	position: relative;
-	background: url(../images/why-pharmaton-page/bg.png), #FFFFFF;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-	border-radius: 2.5rem 0rem;
+.contact-img-question {
+    position: relative;
+    display: inline-block;
+    background: #053385;
+    border-radius: 2rem;
+    width: 2.75rem;
+    height: 2.75rem;
 }
 
-.contact-img-question {
-	position:relative;
-	display: inline-block;
-	background: #053385;
-	border-radius: 2rem;
-	width: 2.75rem;
-	height: 2.75rem;
-}
 .contact-img-question img {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .btn-learn-more button {
-	margin:auto;
-	display:block;
-	justify-content: center;
-	padding: 1rem 1.25rem;
-	border: 1px solid #053385;
-	border-radius: 2rem;
-	width: 11.25rem;
-	font-weight: 400;
-	font-size: 0.6875rem;
-	line-height: 1.75rem;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    padding: 1rem 1.25rem;
+    border: 1px solid #053385;
+    border-radius: 2rem;
+    width: 11.25rem;
+    font-weight: 400;
+    font-size: 0.6875rem;
+    line-height: 1.75rem;
 }
 
 .feature-text {
-	line-height: 1.5rem;
+    line-height: 1.5rem;
 }
 
 .btn-learn-more {
-	text-align:center;
-	margin-top: 3rem;
+    text-align: center;
+    margin-top: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
-	.btn-learn-more {
-		display: none;
-	}
+    .btn-learn-more {
+        display: none;
+    }
 }
