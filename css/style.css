@@ -586,7 +586,7 @@ button:focus {
     content: "";
     left: 0;
     top: -0;
-    background: url(../images/more-energy/line.svg) no-repeat;
+    background: url(../images/card-line.svg) no-repeat;
     background-size: 100%;
     width: 100%;
     height: 2rem;
