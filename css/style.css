@@ -470,15 +470,18 @@ button:focus {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 2.5rem 3.125rem 3.75rem;
+    padding: 2.5rem 5.125rem 3.75rem;
     margin-top: -9.375rem;
     position: relative;
-    background: url(../images/why-pharmaton-page/bg.png), #FFFFFF;
+    background: url(../images/pharmaton-why-background-index.png), #FFFFFF;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 2.5rem 0rem;
 }
-
+.why-pharmaton .title-wrapper::before{
+    content: url("../images/icon/pharmaton-why-icon-index.svg");
+    right: auto;
+}
 .product-list {
     margin: 0;
     padding-top: 12rem;
@@ -1597,24 +1600,6 @@ footer .social-links a {
     margin: auto;
 }
 
-.feature-title-quest {
-    font-family: 'Verlag';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    color: var(--color-primary);
-    padding: 1.25rem;
-}
-
-.feature-text {
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 325;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: var(--color-primary);
-}
 
 .btn-learn-more {
     text-align: center;
@@ -1864,7 +1849,6 @@ footer .social-links a {
 }
 
 .card {
-    width: 423px;
     background: linear-gradient(359.75deg, #F9C71C 0.21%, #D3480D 99.76%);
     border-radius: 2rem 0;
     border: unset;
@@ -1945,19 +1929,12 @@ footer .social-links a {
         margin-bottom: 0.8rem;
     }
 }
-
-
-
 /* Định dạng trang error */
-/*error*/
 .error-tittle-wrapper {
-    background: url(../images/error/bg-error.svg) center no-repeat;
+    background: url(../images/pharmaton-background-error.svg) center no-repeat;
     background-size: cover;
-    height: 41.375rem;
-}
-
-.row.bg-content-text {
-    padding-top: 1.3125rem;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
 }
 
 .img-oobs {
@@ -1969,34 +1946,13 @@ footer .social-links a {
     width: 100%;
     height: auto;
 }
-
-.text-404 {
-    font-family: 'Verlag';
-    font-size: 2.5625rem;
-    padding-top: 1.25rem;
-    text-align: center;
-    color: var(--color-primary);
-}
-
-.text-page {
-    padding: 0.6875rem;
-    font-family: 'Gotham';
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: center;
-}
-
-.add-to-cart-error {
-    border-radius: 2.25rem;
-    padding: 1.375rem;
-    text-align: center;
-}
-
 .btn-back-home {
+    margin: 0 auto;
+    display: block;
     width: 14.125rem;
-    height: 3.75rem;
-    padding: 0rem 1rem;
+    padding: 1.5rem;
     border-radius: 2rem;
+    text-align: center;
 }
 
 @media screen and (max-width:768px) {
@@ -2396,4 +2352,12 @@ footer .social-links a {
     .btn-learn-more {
         display: none;
     }
+}
+
+
+
+.where-to-buy .title-wrapper::before {
+width: 52px;
+height: 52px;
+content: url("../images/icon/pharmaton-icon-where-to-by.svg");
 }
