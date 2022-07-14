@@ -940,10 +940,11 @@ button:focus {
 }
 
 @media screen and (max-width: 991px) {
-    .bg-home{
+    .bg-home {
         z-index: -2;
         position: relative;
     }
+
     .product-page {
         background: none;
     }
@@ -952,6 +953,7 @@ button:focus {
         margin-bottom: 18rem;
         justify-content: flex-start;
     }
+
     .product-page .product-item:last-child {
         margin-bottom: 0;
     }
@@ -2005,99 +2007,69 @@ footer .social-links a {
 
 
 /* Định dạng trang contact */
-
-.contact-title-wrapper {
-    padding-bottom: 8rem;
+.contact-page {
+    height: 100%;
 }
 
-.row.background-contact {
-    height: 13.375rem;
-    padding: 1rem 0rem;
+.contact-page .contact-title {
+    background-color: rgba(253, 182, 52, 0.05);
+    padding-top: 4rem;
+    padding-bottom: 1.625rem;
 }
 
-.row.color {
-    background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
+.contact-page .contact-title .title-wrapper,
+.contact-content {
+    max-width: 644px;
+    margin: 0 auto;
 }
 
-.feature-title {
-    font-family: 'Verlag';
-    font-size: 3.25rem;
-    line-height: 3.25rem;
-    color: var(--color-primary);
-}
-
-.contact-img-phone {
-    position: relative;
-    display: inline-block;
-    background: var(--color-primary);
-    border-radius: 2rem;
-    width: 3.25rem;
-    height: 3.25rem;
-}
-
-.contact-img-phone img {
-    position: absolute;
-    left: 12.5%;
-    right: 12.5%;
-    top: 16.67%;
-    bottom: 16.55%;
+.contact-page .contact-title .title-wrapper::before {
+    right: auto;
+    content: url(../images/icon/pharmaton-contact-icon-title.svg);
+    width: 52px;
+    height: 52px;
 }
 
 .contact-content {
-    color: var(--color-primary);
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 350;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.01em;
-    padding-top: 1.25rem;
+    padding-top: 2.625rem;
+    padding-bottom: 2.625rem;
 }
 
-.contact-row-height-content {
-    display: inherit;
+.contact-content .contact-content-item {
+    margin-bottom: 3rem;
 }
 
-.contact-border-left-bottom-organge {
-    background: #DA372B;
-    border: 0.0625rem solid #DA372B;
-    width: 0.375rem;
+.contact-content .contact-content-item .contact-content-item-text {
+    font-weight: 700;
+    position: relative;
+    padding-left: 1rem;
 }
 
-.contact-border-left-top-organge {
-    background: #DA372B;
-    border: 0.0625rem solid #000;
-    width: 0.375rem;
+.contact-content .contact-content-item .contact-content-item-text::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: var(--color-red);
+    left: 0;
 }
 
-.contact-content p {
-    text-align: left;
-    padding: 0.625rem 0 0.625rem 0.625rem;
-    margin-bottom: 0;
+.contact-content .contact-content-item a {
+    display: block;
+    padding-left: 3rem;
+    margin-bottom: 0.8125rem;
+    text-decoration: underline;
+    position: relative;
 }
 
-.contact-img-content {
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 0.625rem 0.75rem 0.625rem 0.625rem;
+.contact-content .contact-content-item a::before {
+    position: absolute;
+    content: url("../images/icon/pharmaton-contact-icon-mail.svg");
+    left: 15px;
 }
 
-.link {
-    text-decoration-line: underline;
-    color: var(--color-primary);
-}
-
-.contact-mail {
-    color: var(--color-dark);
-    text-shadow: 0rem 0.25rem 0.25rem rgb(0 0 0 / 25%);
-}
-
-.contact-text {
-    color: var(--color-primary);
-}
-
-a:hover {
-    color: #00F;
+.contact-content .contact-content-item a.contact-content-item-phone::before {
+    content: url("../images/icon/pharmaton-contact-icon-phone.svg");
 }
 
 /* Định đạng trang chi tiết sản phẩm */
