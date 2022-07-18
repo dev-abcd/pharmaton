@@ -1750,11 +1750,12 @@ footer .social-links a {
 }
 
 .result-list-wrapper .product-img {
-    width: 80%;
+    width: auto;
     height: 80%;
     position: absolute;
     left: 11.5%;
     bottom: 11.5%;
+    margin-left: 1.75rem;
 }
 
 .result-list-wrapper .card-link {
