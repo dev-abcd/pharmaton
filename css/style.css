@@ -1072,6 +1072,11 @@ button:focus {
     bottom: -2rem;
 }
 
+.related .owl-carousel .owl-item img {
+    width: auto;
+    margin-left: 3.5rem;
+}
+
 .related .product-item-info {
     padding-top: 8rem;
 }
