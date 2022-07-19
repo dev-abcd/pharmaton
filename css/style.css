@@ -251,6 +251,10 @@ button:focus {
     }
 }
 
+.banner .banner-img {
+    width: 100%;
+}
+
 @media screen and (max-width: 767px) {
 
     .menu.navbar {
@@ -478,10 +482,12 @@ button:focus {
     background-size: 100% 100%;
     border-radius: 2.5rem 0rem;
 }
-.why-pharmaton .title-wrapper::before{
+
+.why-pharmaton .title-wrapper::before {
     content: url("../images/icon/pharmaton-why-icon-index.svg");
     right: auto;
 }
+
 .product-list {
     margin: 0;
     padding-top: 12rem;
@@ -614,8 +620,6 @@ button:focus {
     background-color: white;
 }
 
-
-
 .see-more-link {
     padding-top: 7rem;
 }
@@ -653,14 +657,27 @@ button:focus {
     }
 }
 
-
-#article-list-section {
-    padding-top: 10rem;
-    padding-bottom: 4.375rem;
+.article-list-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 9.625rem;
+    padding-bottom: 4.625rem;
 }
 
 .article-list-section .title-wrapper::before {
     content: url("../images/icon/pharmaton-energy.svg");
+}
+
+.article-list-section .article-list {
+    padding-left: 3.875rem;
+    padding-right: 3.875rem;
+}
+
+@media screen and (max-width:992px) {
+    .article-list-section .article-list {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .energy-title-icon {
@@ -681,11 +698,6 @@ button:focus {
     right: 28%;
     top: 10%;
     bottom: 10%;
-}
-
-.article-list {
-    margin-bottom: 5.5rem 0 1.5rem 0;
-    padding: 0 auto;
 }
 
 .line-hr {
@@ -944,7 +956,6 @@ button:focus {
 
 @media screen and (max-width: 991px) {
     .bg-home {
-        z-index: -2;
         position: relative;
     }
 
@@ -1935,6 +1946,7 @@ footer .social-links a {
         margin-bottom: 0.8rem;
     }
 }
+
 /* Định dạng trang error */
 .error-tittle-wrapper {
     background: url(../images/pharmaton-background-error.svg) center no-repeat;
@@ -1952,6 +1964,7 @@ footer .social-links a {
     width: 100%;
     height: auto;
 }
+
 .btn-back-home {
     margin: 0 auto;
     display: block;
@@ -2363,7 +2376,7 @@ footer .social-links a {
 
 
 .where-to-buy .title-wrapper::before {
-width: 52px;
-height: 52px;
-content: url("../images/icon/pharmaton-icon-where-to-by.svg");
+    width: 52px;
+    height: 52px;
+    content: url("../images/icon/pharmaton-icon-where-to-by.svg");
 }
