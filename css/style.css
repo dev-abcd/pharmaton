@@ -2,7 +2,6 @@
     Created on : May 18, 2022, 9:31:32 PM
     Author     : chemi
 */
-
 @font-face {
     font-family: Verlag;
     font-style: normal;
@@ -66,6 +65,10 @@ input:focus,
 button:focus {
     outline: 0;
     box-shadow: none;
+}
+
+img {
+    height: auto;
 }
 
 ::-webkit-input-placeholder {
@@ -399,8 +402,6 @@ button:focus {
     width: 0%;
 
 }
-
-/* Định đạng ngôn ngữ */
 .lang-menu {
     position: relative;
     min-width: 3.25rem;
@@ -466,8 +467,6 @@ button:focus {
     right: 0;
     border-radius: 50%;
 }
-
-/*---------Định đạng trang home----------*/
 .bg-home {
     background: linear-gradient(0deg, rgba(253, 182, 52, 0.25), rgba(253, 182, 52, 0.25)), linear-gradient(0deg, rgba(253, 171, 137, 0.25), rgba(253, 171, 137, 0.25)), #FFFFFF;
 }
@@ -479,19 +478,20 @@ button:focus {
 .product-home::before {
     position: absolute;
     content: "";
-    background-image: url("../images/backgroup-product-related-main.png");
+    background-image: url("../images/backgroup-product-related-main.webp");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
-    z-index: 1;
 }
+
 @media screen and (max-width: 767px) {
     .product-home::before {
         background-size: auto;
     }
 }
+
 .why-pharmaton {
     max-width: 866px;
     margin: 0 auto;
@@ -509,6 +509,12 @@ button:focus {
 .why-pharmaton .title-wrapper::before {
     content: url("../images/icon/pharmaton-why-icon-index.svg");
     right: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .why-pharmaton {
+        padding: 2rem;
+    }
 }
 
 .product-list {
@@ -554,6 +560,8 @@ button:focus {
     width: auto !important;
     left: 0;
     bottom: -3rem;
+    right: 0;
+    margin: auto;
 }
 
 .product-item-info {
@@ -654,7 +662,7 @@ button:focus {
 .end-product-list-wrapper::before {
     position: absolute;
     content: "";
-    background-image: url("../images/backgroup-product-related-top.png");
+    background-image: url("../images/backgroup-product-related-top.webp");
     background-repeat: no-repeat;
     width: 100%;
     height: 8.1875rem;
@@ -763,10 +771,6 @@ button:focus {
     right: 1.5rem;
 }
 
-
-
-
-/*------- Định dạng trang term & policy -------*/
 #term-policy-title>.container-fluid {
     background: linear-gradient(0deg, rgba(253, 182, 52, 0.05), rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
 }
@@ -952,12 +956,10 @@ button:focus {
         font-weight: 700;
     }
 }
-
-/*---------Định đạng trang products=----------*/
 .product-page {
     padding-top: 2.875rem;
     padding-bottom: 8rem;
-    background-image: url(../images/backgroup-product-related-main.png);
+    background-image: url(../images/backgroup-product-related-main.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -971,10 +973,6 @@ button:focus {
 }
 
 @media screen and (max-width: 991px) {
-    .bg-home {
-        position: relative;
-    }
-
     .product-page {
         background: none;
     }
@@ -994,7 +992,6 @@ button:focus {
         background-image: url(../images/backgroup-product-related-main.png);
         background-repeat: no-repeat;
         background-size: 100%;
-        /* background-position: right; */
         width: 1440px;
         height: 1094px;
         top: -116%;
@@ -1133,8 +1130,6 @@ button:focus {
         overflow: hidden;
     }
 }
-
-/* Định dạng bài post */
 .post-content {
     padding-top: 3.375rem;
 }
@@ -1243,9 +1238,6 @@ button:focus {
     margin: auto;
 }
 
-/* Định đạng footer */
-
-
 footer .footer-infomation {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -1277,8 +1269,6 @@ footer .legal-links li a:hover {
     color: var(--color-white);
 }
 
-
-/* Định đạng tìm kiếm */
 .search {
     position: relative;
     margin-left: 1rem;
@@ -1458,8 +1448,6 @@ footer .social-links a {
 }
 
 
-/*essential*/
-
 .product-essential-wapper {
     font-family: 'Verlag';
     font-style: normal;
@@ -1500,8 +1488,6 @@ footer .social-links a {
     color: #FFF;
     margin-bottom: 2rem;
 }
-
-/**/
 .ingredients_list {
     padding: 0;
     margin: 0;
@@ -1545,7 +1531,6 @@ footer .social-links a {
     margin-left: -1.5rem;
 }
 
-/**/
 #show_other_product_mobile {
     display: none;
 }
@@ -1612,8 +1597,6 @@ footer .social-links a {
         display: block;
     }
 }
-
-/*why-pharmaton-page*/
 .contact-img-question {
     position: relative;
     display: inline-block;
@@ -1648,8 +1631,6 @@ footer .social-links a {
     font-size: 0.6875rem;
     line-height: 1.75rem;
 }
-
-/* ---- search result ----- */
 #search-title>.container-fluid {
     background: linear-gradient(0deg, rgba(253, 182, 52, 0.05),
             rgba(253, 182, 52, 0.05)), linear-gradient(0deg, rgba(253, 171, 137, 0.05), rgba(253, 171, 137, 0.05)), #FFFFFF;
@@ -1843,8 +1824,6 @@ footer .social-links a {
 
 }
 
-/* Định dạng phần post */
-
 .bg-pur {
     background: #707BD8;
     padding: 1rem 1.25rem;
@@ -1962,8 +1941,6 @@ footer .social-links a {
         margin-bottom: 0.8rem;
     }
 }
-
-/* Định dạng trang error */
 .error-tittle-wrapper {
     background: url(../images/pharmaton-background-stran.png) center no-repeat;
     background-size: cover;
@@ -1995,9 +1972,6 @@ footer .social-links a {
         font-size: 1.5rem;
     }
 }
-
-
-/* Định dạng trang contact */
 .contact-page {
     height: 100%;
 }
@@ -2063,8 +2037,6 @@ footer .social-links a {
     content: url("../images/icon/pharmaton-contact-icon-phone.svg");
 }
 
-/* Định đạng trang chi tiết sản phẩm */
-
 .product-content-right {
     padding: 1.5rem;
 }
@@ -2080,8 +2052,6 @@ footer .social-links a {
 .product-text {
     padding: 0.6rem 0;
 }
-
-/**/
 .product-wapper {
     font-style: normal;
     font-weight: 450;
@@ -2244,8 +2214,6 @@ footer .social-links a {
         width: auto;
     }
 }
-
-/* Định dạng where to buy */
 .wtb-icon {
     margin-bottom: 1rem;
     width: 3.25rem;
@@ -2340,9 +2308,6 @@ footer .social-links a {
         height: 7.125rem;
     }
 }
-
-/* Định dạng Why Pharmaton */
-
 .contact-img-question {
     position: relative;
     display: inline-block;
