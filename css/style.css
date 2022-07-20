@@ -29,6 +29,8 @@ body {
     line-height: 16px;
     font-family: 'Gotham';
     font-weight: 400;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 a {
@@ -658,8 +660,6 @@ button:focus {
 }
 
 .article-list-section {
-    max-width: 1440px;
-    margin: 0 auto;
     padding-top: 9.625rem;
     padding-bottom: 4.625rem;
 }
@@ -941,12 +941,6 @@ button:focus {
     background-size: 100% 100%;
     position: relative;
 }
-
-.product-page .product-list {
-    max-width: 1444px;
-    margin: 0 auto;
-}
-
 .product-page .product-item {
     position: relative;
     background: linear-gradient(#ffffff, #ffffff, rgba(0, 0, 0, 0));
@@ -1949,7 +1943,7 @@ footer .social-links a {
 
 /* Định dạng trang error */
 .error-tittle-wrapper {
-    background: url(../images/pharmaton-background-error.svg) center no-repeat;
+    background: url(../images/pharmaton-background-stran.png) center no-repeat;
     background-size: cover;
     padding-top: 6.5rem;
     padding-bottom: 6.5rem;
