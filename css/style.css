@@ -8,12 +8,14 @@
     font-style: normal;
     font-weight: 450;
     src: url(./fonts/Verlag-Black.ttf);
+    font-display: swap
 }
 
 @font-face {
     font-family: Gotham;
     font-style: normal;
     src: url(./fonts/GothamBook.ttf);
+    font-display: swap
 }
 
 :root {
@@ -613,7 +615,7 @@ button:focus {
     content: "";
     left: 0;
     top: -0;
-    background: url(../images/card-line.svg) no-repeat;
+    background: url(../images/card-line.webp) no-repeat;
     background-size: 100%;
     width: 100%;
     height: 2rem;
