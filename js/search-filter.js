@@ -40,3 +40,17 @@ function showArticle() {
     x.style.display = 'block';
   }
 }
+
+const resultKey = document.getElementById("result-key");
+const resultCount = $("#result-count");
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const searchTag = urlParams.get('search-tag')
+const numSearchItem = $('.search-item').length
+
+console.log(numSearchItem);
+
+if(searchTag != null){
+  resultKey.textContent += searchTag;
+  resultCount.text(resultCount.text().replace('0',numSearchItem));
+}

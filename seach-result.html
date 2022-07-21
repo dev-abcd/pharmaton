@@ -10,8 +10,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/search-result.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -34,7 +34,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link current-page" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="products.html">Products</a>
@@ -94,9 +94,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <section id="result-header">
         <div class="container-fluid search-content-wrapper">
             <div class="search-result-header">
-                <span id="result-count">2</span>
+                <span id="result-count">0</span>
                 <span>search results for</span>
-                <span id="result-key">example</span>
+                <span id="result-key"></span>
             </div>
             <div class="search-result-filter" id="search-filter">
                 <button class="btn active" onclick="showAll()">All</button>
@@ -108,11 +108,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <section id="result-list">
         <div class="container-fluid result-list-wrapper">
             <div class="row">
-                <div class="col-lg-6 card-product">
+                <div class="col-lg-6 search-item card-product">
                     <div class="card">
                         <div class="card-img">
-                            <img class="product-frame" src="./images/search-result/product-frame.svg" alt="Card image frame">
-                            <img class="product-img" src="./images/search-result/product-kiddi.png" alt="Card image cap">
+                            <img class="product-img" src="./images/product-search.webp" alt="">
                         </div>
                         <div class="card-body">
                             <p class="card-text">Pharmaton Kiddi</p>
@@ -125,7 +124,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 card-article">
+                <div class="col-lg-6 search-item card-article">
                     <div class="card">
                         <div class="card-img">
                             <img class="article-img" src="./images/search-result/article-1.png" alt="Card image cap">
@@ -141,7 +140,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 card-article">
+                <div class="col-lg-6 search-item card-article">
                     <div class="card">
                         <div class="card-img">
                             <img class="article-img" src="./images/search-result/article-2.png" alt="Card image cap">
@@ -159,7 +158,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 card-article">
+                <div class="col-lg-6 search-item card-article">
                     <div class="card">
                         <div class="card-img">
                             <img class="article-img" src="./images/search-result/article-3.png" alt="Card image cap">
@@ -242,6 +241,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </body>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/custom-site.js"></script>
     <script type="text/javascript" src="js/search-filter.js"></script>
 </html>

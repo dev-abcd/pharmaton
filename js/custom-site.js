@@ -30,6 +30,8 @@ $(lang_menu).click(function (event) {
 
 
 
+
+
 //Get the button back-to-top
 let mybutton = document.getElementById("btn-back-to-top");
 // When the user scrolls down 20px from the top of the document, show the button
@@ -53,26 +55,29 @@ function backToTop() {
     document.documentElement.scrollTop = 0;
 }
 
-
-$('.related-product-list').owlCarousel({
-    margin: 0,
-    item: 3,
-    loop: false,
-    nav: false,
-    navText: ["<img src='../images/icon/slider-left.svg'>", "<img src='../images/icon/slider-right.svg'>"],
-    responsive: {
-        0: {
-            items: 1,
-            loop: true,
-            nav: true
-        },
-        992: {
-            loop: false,
-            nav: false,
-            items: 3
+const related_product_list = '.related-product-list';
+if (related_product_list) {
+    $(related_product_list).owlCarousel({
+        margin: 0,
+        item: 3,
+        loop: false,
+        nav: false,
+        navText: ["<img src='../images/icon/slider-left.svg'>", "<img src='../images/icon/slider-right.svg'>"],
+        responsive: {
+            0: {
+                items: 1,
+                loop: true,
+                nav: true
+            },
+            992: {
+                loop: false,
+                nav: false,
+                items: 3
+            }
         }
-    }
-});
+    });
+}
+
 
 
 $('.other-product-list').owlCarousel({
